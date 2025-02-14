@@ -301,8 +301,6 @@ body {
 
 /*About Us*/
 .about-us {
-	display: flex;
-	justify-content: space-around;
 	padding-top: 100px;
 }
 .about-us__text {
@@ -383,6 +381,7 @@ body {
 .statistics__photo > img:nth-child(1) {
 	position: absolute;
 	bottom: 400px;
+	rotate: 270deg;
 	z-index: 2;
 }
 .statistics__photo > img:nth-child(2) {
