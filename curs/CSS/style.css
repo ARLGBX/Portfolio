@@ -184,7 +184,7 @@ body {
 /* SERVIS SECTION */
 
 .services {
-	padding-top: 0px;
+	padding-top: 0;
 }
 .services__title {
 	display: flex;
@@ -314,7 +314,7 @@ body {
 	position: relative;
 	padding-left: 10%;
 }
-#description__tagline {
+#description__tagline, #description__tagline-2 {
 	margin: 0;
 }
 .description__line {
@@ -418,7 +418,9 @@ body {
 	gap: 200px;
 	padding-top: 100px;
 }
-
+.price__image-block {
+	position: relative;
+}
 .price__image-column {
 	display: flex;
 	flex-direction: column;
@@ -431,7 +433,37 @@ body {
 	background-color: black;
 }
 .price__image-column:nth-child(2) {
-	padding-top: 50px;
+	padding-top: 100px;
+}
+.price__image-block > img:nth-child(1) {
+	filter: brightness(0.7);
+}
+.price__image-block > img:nth-child(1) {
+	position: absolute;
+	top: 60px;
+	left: 50px;
+	z-index: 2;
+}
+.price__image-column:nth-child(2) > img:nth-child(1) {
+	> img:nth-child(2) {
+	position: absolute;
+	top: 80px;
+	left: 50px;
+		z-index: 1;
+}
+.price__text {
+	position:absolute;
+	z-index: 3;
+	top: 50px;
+	left: 300px;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 100%;
+	letter-spacing: -0.05em;
+	text-transform: uppercase;
+	color: #fff;
+
 }
 /*Preset Store*/
 
