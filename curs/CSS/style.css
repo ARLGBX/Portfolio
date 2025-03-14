@@ -596,6 +596,7 @@ body {
 }
 .workers__row {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 150px;
 	gap: 200px;
@@ -924,6 +925,7 @@ body {
 	width: 100px;
 	height: 60px;
 	border: solid 4px #000;
+	margin-left: 50px;
 	transition: 0.4s;
 	background-color: rgba(255, 255, 255, 0);
 }
@@ -953,6 +955,7 @@ body {
 }
 .instagram__images {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -962,7 +965,6 @@ body {
 .instagram__block-image {
 	position: relative;
 	transition: 0.5s;
-
 }
 .instagram__block-image:hover {
 	filter: brightness(0.7);
@@ -977,7 +979,7 @@ body {
 	display: none;
 	position: absolute;
 	bottom: 130px;
-	left: 45%;
+	left: 90px;
 }
 .instagram__row {
 	display: flex;
@@ -1225,6 +1227,16 @@ footer {
 		justify-content: center;
 	}
 }
+@media screen and (max-width: 1255px) {
+	.gift__content {
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 1101px) {
+	.questions__inspiration {
+	}
+
+}
 @media screen and (max-width: 1020px) {
 	.nav__links > a:not(:last-child){
 		display: none;
@@ -1251,7 +1263,19 @@ footer {
 	.nav__purchases {
 		display: none;
 	}
-	.nav__function {
-		justify-content: safe;
+	.workers__row {;
+		gap: 80px;
+	}
+}
+@media screen and (max-width: 950px) {
+	.instagram__link > img:nth-child(1) {
+		width: 200px;
+		height: 200px;
+	}
+	.instagram__link > img:nth-child(2) {
+		bottom: 95px;
+	}
+	.gift__block-product {
+		box-shadow: none;
 	}
 }
