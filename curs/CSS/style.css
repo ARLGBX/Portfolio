@@ -84,6 +84,60 @@ body {
 	line-height: 100%;
 	color: #fff;
 }
+.header__account-window {
+	position: absolute;
+	height: 275px;
+	width: 188px;
+	right: 180px;
+	top: 80px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border: solid 1px #C4C4C4;
+}
+.header__account-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px 20px 0 20px;
+}
+.header__account-content > a {
+	font-family: var(--font-family), sans-serif;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	color: #000;
+}
+.header__account-greeting {
+	background-color: #f4f5ef;
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+}
+.header__account-greeting > span {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 129%;
+	color: #000;
+}
+.header__account-line {
+	background-color: #c4c4c4;;
+	width: 128px;
+	height: 1px;
+}
+.header__account-exit {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.header__account-exit > span{
+	font-family: var(--font-family), sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 100%;
+	color: #000;
+}
 .discounts__partition {
 	background-color: #c4c4c4;
 	width: 1px;
