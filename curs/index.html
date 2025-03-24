@@ -47,6 +47,22 @@
 								<a href=""><img src="./SVG/like.svg" alt="image"></a>
                                 <a href=""><img src="./SVG/personal-account.svg" alt="image"></a>
                                 <a href=""><img src="./SVG/purchases.svg" alt="image"></a>
+								<div class="header__account-window">
+									<div class="header__account-greeting">
+										<span>Приветствуем, <br> NAME</span>
+									</div>
+									<div class="header__account-content">
+										<a href="">Данные аккаунта</a>
+										<a href="">Контактные данные</a>
+										<a href="">Мои заказы</a>
+										<a href="">Избранное</a>
+										<div class="header__account-line"></div>
+										<div class="header__account-exit">
+											<img src="./SVG/header__account-exit.svg">
+											<span>Выйти</span>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -58,6 +74,9 @@
 						<span>a purchase gift starting from $50,000.</span>
 					</div>
 				</nav>
+
+
+				</div>
 				<div class="header__resume">
 					<div class="resume__stury">
 						<h1>
@@ -82,9 +101,7 @@
 							memories, and I’m honored to be the one holding the camera.
 						</p>
 					</div>
-					<div class="resume__port">
-						<img src="./SVG/photo-of-a-person.svg" alt="image">
-					</div>
+					<img class="resume__image" src="./SVG/photo-of-a-person.svg" alt="image">
 				</div>
 			</div>
 		</header>
@@ -99,25 +116,26 @@
 						<div class="welcome__column">
 							<span>welcome to</span>
 							<div class="welcome__pictur">
-								<img src="./SVG/picture-1.svg" alt="image">
+								<img class="welcome__pictur-one" src="./SVG/picture-1.svg" alt="image">
 							</div>
 						</div>
 						<div class="welcome__column">
 							<div class="welcome__pictur">
-								<img src="./SVG/picture-4.svg" alt="image">
+								<img class="welcome__pictur-two" src="./SVG/picture-4.svg" alt="image">
 							</div>
 							<div class="welcome__pictur">
-								<img src="./SVG/picture-3.svg" alt="image">
+								<img class="welcome__pictur-three" src="./SVG/picture-3.svg" alt="image">
 							</div>
 						</div>
                         <div class="welcome__column">
 							<div class="welcome__pictur">
-								<img src="./SVG/picture-2.svg" alt="image">
+								<img class="welcome__pictur-four" src="./SVG/picture-2.svg" alt="image">
 							</div>
 						</div>
 					</div>
 					<div class="welcome__name">
 						<span class="black-text"><span class="white-text">STYLE <br> ON </span> Mirro Studio</span>
+						<div class="description__line-price" id="welcome__line"></div>
 					</div>
 				</div>
 			</section>
@@ -650,19 +668,21 @@
 				<div class="container">
 					<div class="discounts__content">
 						<div class="discounts__line"></div>
-						<div class="discounts__tagline">
-							<h2>10 %</h2>
-							<span>Get it for your first purchase</span>
-						</div>
-						<div class="discounts__transition">
-							<div class="discounts__form-button">
-								<form class="discounts__form" action="/submit-form" method="get">
-									<label for="email-1"></label>
-									<input class="discounts__form" type="email" name="email" placeholder="E-mail" id="email-1" required>
-								</form>
-								<button class="discounts__button">subscribe</button>
+						<div class="discounts__info">
+							<div class="discounts__tagline">
+								<h2>10 %</h2>
+								<span>Get it for your first purchase</span>
 							</div>
-							<span>By subscribing, you agree to the Privacy & Usage Policy</span>
+							<div class="discounts__transition">
+								<div class="discounts__form-button">
+									<form class="discounts__form" action="/submit-form" method="get">
+										<label for="email-1"></label>
+										<input class="discounts__form" type="email" name="email" placeholder="E-mail" id="email-1" required>
+									</form>
+									<button class="discounts__button">subscribe</button>
+								</div>
+								<span>By subscribing, you agree to the Privacy & Usage Policy</span>
+							</div>
 						</div>
 						<div class="discounts__line"></div>
 					</div>
@@ -762,33 +782,38 @@
 		<footer>
 			<div class="container">
 				<div class="footer__information">
-					<div class="footer__information-block">
-						<h2>TO CUSTOMERS</h2>
-						<a href="">How to place an order</a>
-						<a href="">Payment and delivery</a>
-						<a href="">Return of the product</a>
-						<a href="">Public offer</a>
-						<a href="">Conference Policy</a>
+					<div class="footer__information-wrap">
+						<div class="footer__information-block">
+							<h2>TO CUSTOMERS</h2>
+							<a href="">How to place an order</a>
+							<a href="">Payment and delivery</a>
+							<a href="">Return of the product</a>
+							<a href="offer.html">Public offer</a>
+							<a href="">Conference Policy</a>
+						</div>
+						<div class="footer__information-block">
+							<h2>CONTACTS</h2>
+							<a href="">+7 (812) 438-01-14</a>
+							<a href="">info@molbertgallery.ru</a>
+							<span>Пн-Вс  09.00-20.00 </span>
+							<span>191186, Russia, St. Petersburg</span>
+							<span>Bolshaya Konyushennaya str., 11</span>
+						</div>
 					</div>
-					<div class="footer__information-block">
-						<h2>CONTACTS</h2>
-						<a href="">+7 (812) 438-01-14</a>
-						<a href="">info@molbertgallery.ru</a>
-						<span>Пн-Вс  09.00-20.00 </span>
-						<span>191186, Russia, St. Petersburg</span>
-						<span>Bolshaya Konyushennaya str., 11</span>
+					<div class="footer__information-wrap">
+						<div class="footer__information-block">
+							<h2>ABOUT US</h2>
+							<a href="">Who are we</a>
+							<a href="">Requisites</a>
+							<a href="">Reviews</a>
+						</div>
+						<div class="footer__information-block">
+							<h2>PARTNERSS</h2>
+							<a href="">Request for cooperation</a>
+							<a href="">Services</a>
+						</div>
 					</div>
-					<div class="footer__information-block">
-						<h2>ABOUT US</h2>
-						<a href="">Who are we</a>
-						<a href="">Requisites</a>
-						<a href="">Reviews</a>
-					</div>
-					<div class="footer__information-block">
-						<h2>PARTNERSS</h2>
-						<a href="">Request for cooperation</a>
-						<a href="">Services</a>
-					</div>
+
 					<div class="footer__information-block">
 						<div class="footer__social-network">
 							<h2>WE ARE IN SOCIAL-MEDIA:</h2>
