@@ -273,7 +273,8 @@ body {
 }
 .services__title-text > p {
 	font-family: var(--font-family), sans-serif;
-	width: 500px;
+	max-width: 500px;
+	text-wrap: wrap;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
@@ -282,18 +283,19 @@ body {
 }
 .services__row {
 	display: flex;
+    /*flex-wrap: wrap;*/
 	justify-content: center;
-	gap: 30px;
-	padding-top: 30px;
+	gap: 20px;
+	padding-top: 20px;
 }
 .services__block {
 	max-width: 379px;
-	min-height: 304px;
-	background-color: aliceblue;
+	min-height: 100%;
+	background-color: #e0e3ff;
 	border-radius: 30px;
 }
 .servisec__content {
-	padding: 30px;
+	padding: 20px;
 }
 .servisec__content > h3 {
 	font-family: var(--font-family), sans-serif;
@@ -304,7 +306,7 @@ body {
 .servisec__content > p {
 	font-family: var(--font-family), sans-serif;
 	font-weight: 500;
-	font-size: 19px;
+	font-size: 15px;
 	line-height: 140%;
 	color: #292c32;
 }
@@ -553,7 +555,7 @@ body {
 	top: 40%;
 	left: 35%;
 }
-.price__button {
+	.price__button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -568,7 +570,7 @@ body {
 	background-color: rgba(255, 255, 255, 0);
 }
 .price__button:hover {
-	background-color: #FF4823;
+	background-color: rgba(255, 72, 35, 0.73);
 	cursor: pointer;
 }
 
@@ -1192,6 +1194,10 @@ body {
 	font-size: 18px;
 	color: #282825;
 }
+.questions__button-block {
+	display: flex;
+	justify-content: center;
+}
 .questions__button {
 	border: 3px solid #000;
 	width: 498px;
@@ -1405,15 +1411,21 @@ footer {
 		height: 650px;
 	}
 	.welcome h2 {
-		font-size: 102px;
+		font-size: 72px;
 		padding-top: 200px;
 	}
+	.welcome__column {
+		height: 300px;
+	}
 	.white-text {
-		font-size: 50px;
+		font-size: 30px;
 	}
 	.black-text {
-		font-size: 54px;
+		font-size: 34px;
 	}
+    #welcome__line {
+        width: 300px;
+    }
 	.instagram__link > img:nth-child(1) {
 		width: 100px;
 		height: 100px;
@@ -1441,5 +1453,27 @@ footer {
 	.welcome__pictur-four {
 		width: 120px;
 		height: 182px;
+	}
+    .services__row {
+        flex-wrap: wrap;
+    }
+	.block__image-one {
+		width: 280px;
+		height: 280px;
+	}
+	.block__image-two, .block__image-three, .block__image-four {
+		width: 426px;
+		height: 326px;
+	}
+	.statistics {
+		gap: 50px;
+	}
+	.details__row {
+		justify-content: start;
+	}
+}
+@media screen and (max-width: 520px) {
+	.questions__button, .questions__form {
+		width: 343px;
 	}
 }
