@@ -198,6 +198,9 @@ body {
 	gap: 100px;
 	justify-content: center;
 }
+.welcome__adapt {
+    display: none;
+}
 .welcome__column {
 	display: flex;
 	flex-direction: column;
@@ -414,7 +417,7 @@ body {
 }
 .description > p {
 	padding-top: 30px;
-	width: 372px;
+	max-width: 372px;
 	font-family: var(--third-family), sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -755,14 +758,19 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 100px;
-    gap: 200px;
+    gap: 50px;
 	min-height: 1150px;
+}
+.necessary__adapt-row {
+    display: flex;
+    gap: 50px;
 }
 .necessary__image-column {
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
 }
+
 .necessary__service {
 	font-family: var(--font-family), sans-serif;
 	font-weight: 600;
@@ -931,6 +939,7 @@ body {
 .gift__block-product {
 	display: flex;
 	justify-content: center;
+    flex-wrap: wrap;
 	align-items: center;
 	gap: 100px;
 	width: 764px;
@@ -1508,9 +1517,7 @@ footer {
 		padding-left: 50px;
 		padding-top: 200px;
 	}
-	.welcome__adapt {
-		display: block;
-	}
+
 	.welcome__column {
 		height: 450px;
 	}
@@ -1533,5 +1540,54 @@ footer {
 	}
 	.resume__stury > p {
 		font-size: 14px;
+        width: 300px;
+	}
+    .resume__stury {
+        width: 290px;
+    }
+    .welcome__adapt {
+        display: block;
+    }
+    .resume__stury > h1 > span, .resume__stury > h1  {
+        font-size: 35px;
+    }
+    .gift__block-product {
+        gap: 20px;
+    }
+    .gift__block-text > p {
+        font-size: 17px;
+    }
+    .discounts__tagline > h2 {
+        text-wrap: nowrap;
+    }
+    .discounts__form {
+        width: 180px;
+    }
+    .block-organization__content > h3 {
+        font-size: 60px;
+    }
+    .instagram__row, .instagram__images {
+        gap: 10px;
+    }
+    .necessary__adapt-row {
+		gap: 10px;
+		flex-wrap: nowrap;
+	}
+	.necessary__columns {
+		gap: 0;
+	}
+	.necessary__service {
+		font-size: 23px;
+	}
+	.necessary__image-1, .necessary__image-4 {
+		width: 230px;
+		height: 380px;
+	}
+	.necessary__image-2, .necessary__image-3 {
+		width: 230px;
+		height: 400px;
+	}
+	.necessary__image-block:nth-child(2) {
+		padding-top: 50px;
 	}
 }
