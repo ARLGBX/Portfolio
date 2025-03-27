@@ -11,7 +11,9 @@
 	--font4: 'Prata', sans-serif;
 	--font5: 'SF Pro Display', sans-serif;
 }
-
+* {
+	border: solid 1px black;
+}
 .container {
 	max-width: 1360px;
 	margin: 0 auto;
@@ -268,6 +270,41 @@ body {
 	width: 600px;
 }
 
+
+.header__work-window {
+	position: absolute;
+	max-width: 1440px;
+	height: 681px;
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SERVIS SECTION */
 
 .services {
@@ -315,9 +352,10 @@ body {
 	min-height: 100%;
 	background-color: #e0e3ff;
 	border-radius: 30px;
+	margin: 10px;
 }
 .servisec__content {
-	padding: 20px;
+	padding: 10px;
 }
 .servisec__content > h3 {
 	font-family: var(--font-family), sans-serif;
@@ -433,7 +471,7 @@ body {
 .statistics {
 	padding-top: 100px;
 	display: flex;
-	gap: 200px;
+	gap: 200px; margin: 0 10px 0 10px;
 }
 .statistics__block {
 	display: flex;
@@ -649,6 +687,7 @@ body {
 .details__block {
 	border-left: solid 1px black;
 	padding-left: 30px;
+	margin: 0 10px 0 10px;
 }
 .details__under-text {
 	padding-left: 5%;
@@ -976,6 +1015,7 @@ body {
 	width: 67px;
 	height: 0;
 }
+
 .gift__block-text > p {
 	width: 392px;
 	font-family: var(--font-family), sans-serif;
@@ -983,6 +1023,7 @@ body {
 	font-size: 18px;
 	line-height: 145%;
 	color: #282825;
+	margin: 10px;
 }
 .gift__price {
 	font-family: var(--font-family), sans-serif;
@@ -1025,6 +1066,7 @@ body {
 .instagram__text {
 	display: flex;
 	flex-direction: column;
+	margin: 10px;
 	gap: 10px;
 }
 .instagram__text > h2 {
@@ -1580,8 +1622,8 @@ footer {
 		font-size: 23px;
 	}
 	.necessary__image-1, .necessary__image-4 {
-		width: 230px;
-		height: 380px;
+		width: 100px;
+		height: 350px;
 	}
 	.necessary__image-2, .necessary__image-3 {
 		width: 230px;
@@ -1589,5 +1631,42 @@ footer {
 	}
 	.necessary__image-block:nth-child(2) {
 		padding-top: 50px;
+	}
+	.gift__block-text > p, .block__set {
+		width: 340px;
+	}
+	.start__content > span, .start__button {
+		font-size: 25px;
+	}
+	.start__content {
+		gap: 0;
+	}
+	.start__button {
+		width: 160px;
+	}
+	.start {
+		width: 360px;
+	}
+	.block__set > img {
+		width: 339px;
+	}
+	.price__image-block > img:nth-child(1) {
+		left: 20px;
+		top: 20px;
+	}
+	.price__image-column {
+		padding-right: 0;
+	}
+	.price__image-column:nth-child(2) {
+		padding-top: 0;
+	}
+	.black-text , .white-text {
+		font-size: 25px;
+	}
+	#price__text-4 {
+		left: 20%;
+	}
+	.gift__block-text {
+		width: 360px;
 	}
 }
