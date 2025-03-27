@@ -18,6 +18,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/style.css">
+
+<!--SWIPER-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
 </head>
 <body>
 <header>
@@ -45,24 +54,28 @@
 					</div>
 					<div class="search-icon__icon">
 						<a href=""><img src="./SVG/like.svg" alt="image"></a>
-						<a href=""><img src="./SVG/personal-account.svg" alt="image"></a>
+                        <div class="header__container-account">
+                            <a href=""><img src="./SVG/personal-account.svg" alt="image"></a>
+                            <div class="header__account-window">
+                                <div class="header__account-greeting">
+                                    <span>Приветствуем, <br> NAME</span>
+                                </div>
+                                <div class="header__account-content">
+                                    <a href="">Данные аккаунта</a>
+                                    <a href="">Контактные данные</a>
+                                    <a href="">Мои заказы</a>
+                                    <a href="">Избранное</a>
+                                    <div class="header__account-line"></div>
+                                    <div class="header__account-exit">
+                                        <img src="./SVG/header__account-exit.svg" alt="image">
+                                        <span>Выйти</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 						<a href=""><img src="./SVG/purchases.svg" alt="image"></a>
-						<div class="header__account-window">
-							<div class="header__account-greeting">
-								<span>Приветствуем, <br> NAME</span>
-							</div>
-							<div class="header__account-content">
-								<a href="">Данные аккаунта</a>
-								<a href="">Контактные данные</a>
-								<a href="">Мои заказы</a>
-								<a href="">Избранное</a>
-								<div class="header__account-line"></div>
-								<div class="header__account-exit">
-									<img src="./SVG/header__account-exit.svg">
-									<span>Выйти</span>
-								</div>
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -102,7 +115,6 @@
 			</p>
 		</div>
 		<img class="resume__image" src="./SVG/photo-of-a-person.svg" alt="image">
-	</div>
 	</div>
 </header>
 <main>
@@ -273,7 +285,7 @@
 					<div class="description__line"></div>
 					<p>A platform that implements unique projects. Professional staff of employees. More than 1000 events are organized. For each work, we give out a certificate of authenticity.</p>
 					<button class="description__button">
-						<img src="./SVG/Arrow.svg" alt="image">
+						<img src="./SVG/Blacr-arrow.svg" alt="image">
 					</button>
 				</div>
 				<div class="statistics">
@@ -399,48 +411,59 @@
 
 	<!--workers-->
 
-	<section class="workers">
+	<section class="workers ">
 		<div class="container">
 			<div class="workers__tagline">
 				<h2 class="black-text"><span class="white-text">POPULAR</span> <br> WORKERS</h2>
 				<div class="description__line-price"></div>
 			</div>
-			<div class="workers__row">
-				<div class="workers__block-cards">
-					<div class="workers__face-image">
-						<a href="">
-							<img src="./SVG/workers-face-three.svg" alt="image">
-						</a>
+			<div class="workers__sliders swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="workers__block-cards">
+							<div class="workers__face-image">
+								<img src="./SVG/workers-face-three.svg" alt="Mikhail Solovey">
+							</div>
+							<div class="workers__content">
+								<h3>Mikhail<br>Solovey</h3>
+								<span>Sevastopol, RU</span>
+							</div>
+						</div>
 					</div>
-					<div class="workers__content">
-						<h3>Mikhail<br>Solovey</h3>
-						<span>Sevastopol, RU</span>
+					<div class="swiper-slide">
+						<div class="workers__block-cards">
+							<div class="workers__face-image">
+								<a href="">
+									<img src="./SVG/workers-face-four.svg" alt="image">
+								</a>
+							</div>
+							<div class="workers__content">
+								<h3>Oleg<br>Tregubov</h3>
+								<span>Minsk, BY</span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="workers__block-cards">
+							<div class="workers__face-image">
+								<a href="">
+									<img src="./SVG/workers-face-five.svg" alt="image">
+								</a>
+							</div>
+							<div class="workers__content swiper-slide">
+								<h3>Alexander<br>Shkolny</h3>
+								<span>Astana, KZ</span>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="workers__block-cards">
-					<div class="workers__face-image">
-						<a href="">
-							<img src="./SVG/workers-face-four.svg" alt="image">
-						</a>
-					</div>
-					<div class="workers__content">
-						<h3>Oleg<br>Tregubov</h3>
-						<span>Minsk, BY</span>
-					</div>
-				</div>
-				<div class="workers__block-cards">
-					<div class="workers__face-image">
-						<a href="">
-							<img src="./SVG/workers-face-five.svg" alt="image">
-						</a>
-					</div>
-					<div class="workers__content">
-						<h3>Alexander<br>Shkolny</h3>
-						<span>Astana, KZ</span>
-					</div>
-				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
 			</div>
+
 			<div class="workers__transition">
+
 				<button class="workers__button">
 					MORE
 				</button>
@@ -456,7 +479,6 @@
 			</div>
 			<div class="necessary__columns">
 				<div class="necessary__image-column">
-					<div class="necessary__adapt-row">
 						<div class="necessary__image-block">
 							<img class="necessary__image-1" src="image/newlyweds.jpeg" alt="image">
 							<h2 class="necessary__service">WEDDING</h2>
@@ -465,10 +487,8 @@
 							<img class="necessary__image-2" src="./image/family.jpg" alt="image">
 							<h2 class="necessary__service">FAMILY PORTRAITS</h2>
 						</div>
-					</div>
 				</div>
 				<div class="necessary__image-column">
-					<div class="necessary__adapt-row">
 						<div class="necessary__image-block">
 							<img class="necessary__image-3" src="./image/restoran.webp" alt="image">
 							<h2 class="necessary__service">ROOM OVERVIEW</h2>
@@ -476,9 +496,7 @@
 						<div class="necessary__image-block">
 							<img class="necessary__image-4" src="./image/tree.jpg" alt="image">
 							<h2 class="necessary__service">NATURE</h2>
-						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -491,7 +509,10 @@
 				<div class="description__line new__line"></div>
 			</div>
 		</div>
-		<div class="new__recent-work">
+		<div class="swiper">
+
+		</div>
+		<div class="new__recent-work swper-wrapper">
 			<div class="new__card-work">
 				<div class="new__card-image">
 					<div class="new__up-card">
@@ -853,5 +874,8 @@
 		</div>
 	</div>
 </footer>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/animation.js"></script>
 </body>
+
 </html>
