@@ -80,20 +80,262 @@
     </header>
 
     <main>
-        <section class="selection-column">
+        <section class="my-account">
             <div class="container">
-                <div class="selection-column">
-                    <span class="selection-column__way"><b>Главна</b> > Публичная оферта</span>
-                    <div class="selection-column__tagline">
+                <div class="my-account">
+                    <span class="my-account__way"><b>Главна</b> > Публичная оферта</span>
+                    <div class="my-account__tagline">
                         <h2 class="black-text">мой аккаунт</h2>
                         <div class="description__line new__line"></div>
                     </div>
                 </div>
+                <div class="my-account__content">
+                    <div class="column__transitions">
+                        <div class="column__transitions-one">
+                            <button class="column__transition"><img src="./SVG/personal-account.svg" alt="image">Данные аккаунта</button>
+                            <button class="column__transition"><img src="./SVG/file-cabinet.svg" alt="image">Контактные данные</button>
+                            <button class="column__transition"><img src="./SVG/purchases.svg" alt="image">Мои заказы</button>
+                        </div>
+
+                        <button class="column__transition column__transition-exit"><img src="./SVG/BIG-esit.svg" alt="image">Выйти</button>
+                    </div>
+                    <div class="column__account-content">
+                        <div class="column__account-login">
+                            <div class="column__account-email">
+                                <h2>Логин(электронная почта)</h2>
+                                <div class="column__block-email">
+                                    <div class="column__block-content">
+                                        <span>Email *</span>
+                                        <form>
+                                            <label for="email"></label>
+                                            <input class="column__block-form" type="email" name="email" id="email" placeholder="Email">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Редактировать</span>
+                        </div>
+                        <div class="column__account-password">
+                            <div class="column__account-login">
+                                <div class="column__account-email">
+                                    <h2>Пароль</h2>
+                                    <div class="column__block-email">
+                                        <div class="column__block-content">
+                                            <span>Ваш пароль*</span>
+                                            <form>
+                                                <label for="password"></label>
+                                                <input class="column__block-form" type="password" name="password" id="password" placeholder="* * * * *">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span>Редактировать</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ALMOST AND PASSWORD -->
+
+                    <div class="column__personal-information">
+                        <div class="column__account-login">
+                            <div class="column__account-email">
+                                <h2>Личные данные</h2>
+                                <div class="column__block-information">
+                                    <div class="column__block-content">
+                                        <span>Имя</span>
+                                        <form>
+                                            <label for="name"></label>
+                                            <input class="column__block-form" type="text" name="name" id="name" placeholder="Ваше имя">
+                                        </form>
+                                    </div>
+                                    <div class="column__block-content">
+                                        <span>Фамилия</span>
+                                        <form>
+                                            <label for="Surname"></label>
+                                            <input class="column__block-form" type="text" name="Surname" id="Surname" placeholder="Ваша фамилия">
+                                        </form>
+                                    </div>
+                                    <div class="column__block-content">
+                                        <span>Телефон</span>
+                                        <form>
+                                            <label for="phone"></label>
+                                            <input class="column__block-form" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Редактировать</span>
+                        </div>
+
+                        <div class="column__no-location">
+                            <div class="column__block-location">
+                                <h2>Адрес</h2>
+                                <div class="column__block-condition">
+                                    <div class="column__circle-notification">
+                                        <img src="./SVG/notification.svg" alt="image">
+                                    </div>
+                                    <span>На данный момент у Вас нет сохраненного адреса</span>
+                                </div>
+                            </div>
+                            <div class="column__location-add">
+                                <img src="./SVG/add.svg" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="column_have-location">
+                            <div class="column__location">
+                                <div class="column__block-location">
+                                    <h2>Адрес</h2>
+                                    <div class="column__block-condition column__condition-location">
+                                        <div class="column__block-content">
+                                            <span>Страна </span>
+                                            <form>
+                                                <label for="country"></label>
+                                                <input class="column__block-form column__form-country" type="text" name="country" id="country" placeholder="ВАША СТРАНА">
+                                                <button class="column__block-button">
+                                                    <img src="./SVG/drop-down.svg" alt="image">
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="column__block-content column__block-address">
+                                            <div class="column__location-form">
+                                                <span>Улица</span>
+                                                <form>
+                                                    <label for="street"></label>
+                                                    <input class="column__block-form column__form-street" type="text" name="street" id="street" placeholder="ВАША УЛИЦА">
+                                                </form>
+                                            </div>
+                                            <div class="column__location-form">
+                                                <span>Дом</span>
+                                                <form>
+                                                    <label for="house"></label>
+                                                    <input class="column__block-form column__form-house" type="text" name="house" id="house" placeholder="ВАШ ДОМ">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="column__block-content column__block-address">
+                                            <div class="column__location-form">
+                                                <span>Город </span>
+                                                <form>
+                                                    <label for="city"></label>
+                                                    <input class="column__block-form column__form-street" type="text" name="city" id="city" placeholder="ВАШ ГОРОД">
+                                                </form>
+                                            </div>
+                                            <div class="column__location-form">
+                                                <span>Дом</span>
+                                                <form>
+                                                    <label for="postal-code"></label>
+                                                    <input class="column__block-form column__form-house" type="text" name="postal-code" id="postal-code" placeholder="ВАШ КОД">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span>Адрес доставки при оформлении заказов по-умолчанию.</span>
+                                </div>
+                            </div>
+                            <span>Редактировать</span>
+                        </div>
+                        <div class="column__payment-method">
+                            <div class="column__block-location">
+                                <h2>Платежный адрес</h2>
+                            </div>
+                            <div class="column__location-add">
+                                <img src="./SVG/add.svg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- location -->
+
+                    <div class="column__my-orders">
+                        <div class="column__orders-header">
+                            <div class="column__orders-block">
+                                <span class="column__bloc-first">Дата</span>
+                                <span class="column__bloc-second">01.12.2020</span>
+                            </div>
+                            <div class="column__orders-block">
+                                <span class="column__bloc-first">Номер заказа</span>
+                                <span class="column__bloc-second">124 490 0000</span>
+                            </div>
+                            <div class="column__orders-block">
+                                <span class="column__bloc-first">Статус заказа</span>
+                                <span class="column__bloc-second">В процессе обработки</span>
+                            </div>
+                            <div class="column__orders-line"></div>
+                        </div>
+                        <div class="column__orders-product">
+                            <div class="column__product-description">
+                                <img src="SVG/product-image.svg" alt="image">
+                                <div class="column__text-description">
+                                    <span class="column__product-name">12 линия Васильевского Острова</span>
+                                    <span class="column__product-author">Сергей Усик</span>
+                                </div>
+                            </div>
+                            <div class="column__product-price">
+                                <h2>Цена</h2>
+                                <div class="column__price-changes">
+                                    <span class="column__price-first">140 000 ₽</span>
+                                    <span class="column__price-second">140 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="column__product-price">
+                                <h2>Отследить посылку</h2>
+                                <div class="column__price-package">
+                                    <span class="column__package-first">DHL</span>
+                                    <span class="column__package-second">Waybill: 992345602</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column__orders-product">
+                            <div class="column__product-description">
+                                <img src="SVG/product-image.svg" alt="image">
+                                <div class="column__text-description">
+                                    <span class="column__product-name">12 линия Васильевского Острова</span>
+                                    <span class="column__product-author">Сергей Усик</span>
+                                </div>
+                            </div>
+                            <div class="column__product-price">
+                                <h2>Цена</h2>
+                                <div class="column__price-changes">
+                                    <span class="column__price-first">140 000 ₽</span>
+                                    <span class="column__price-second">140 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="column__product-price">
+                                <h2>Отследить посылку</h2>
+                                <div class="column__price-package">
+                                    <span class="column__package-first">DHL</span>
+                                    <span class="column__package-second">Waybill: 992345602</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column__final-price">
+                            <h2>Всего</h2>
+                            <span>420 000 ₽</span>
+                        </div>
+                        <div class="column__orders-footer">
+                            <div class="column__orders-delivery">
+                                <div class="column__orders-line line-one"></div>
+                                <span class="column__delivery-text">10.09.2020</span>
+                                <span class="column__delivery-text">124 490 0000</span>
+                                <span class="column__delivery-text product-condition">Отправлен</span>
+                            </div>
+                            <div class="column__orders-line"></div>
+                            <div class="column__orders-delivery">
+                                <span class="column__delivery-text">10.09.2020</span>
+                                <span class="column__delivery-text">124 490 0000</span>
+                                <span class="column__delivery-text product-condition">Доставлен</span>
+                                <div class="column__orders-line line-three"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </section>
     </main>
-
-
     <footer>
         <div class="container">
             <div class="footer__information">
