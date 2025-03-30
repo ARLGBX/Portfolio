@@ -198,22 +198,29 @@ body {
 .column__transition:hover {
     background: #f4f5ef;
 }
-.column__account-content, .column__personal-information {
-    display: none;
+.column__account-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
 .column__personal-information {
-    display: flex;
-    align-items: start;
-}
-.column__account-login, .column_have-location {
     display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+.column__account-login {
+    display: flex;
     align-items: center;
     gap: 50px;
-
+}
+.column_have-location {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 .column__transition-exit {
     height: 63px;
@@ -366,7 +373,7 @@ body {
 
 
 .column__my-orders {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 30px;

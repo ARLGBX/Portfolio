@@ -68,6 +68,9 @@ body {
 	display: flex;
 	gap: 20px;
 }
+#account-window {
+	cursor: pointer;
+}
 .nav__discounts {
 	display: flex;
 	justify-content: center;
@@ -86,6 +89,7 @@ body {
 	color: #fff;
 }
 .header__account-window {
+	display: none;
 	position: absolute;
 	height: 275px;
 	width: 188px;
@@ -1465,10 +1469,6 @@ footer {
     .search-icon__icon > a:nth-child(1) > img {
         display: none;
     }
-	.search-icon__icon > a > img {
-		width: 23px;
-		height: 19px;
-	}
 	.search-icon__input {
 		display: none;
 	}

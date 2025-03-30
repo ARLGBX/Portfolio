@@ -8,3 +8,26 @@ new Swiper('.workers__sliders', {
         clickable: true,
     }
 });
+
+
+
+let DivAccount = false;
+
+const account = document.querySelector('.header__account-window');
+
+const clickers = document.getElementsByClassName("search-icon__icon");
+
+function information() {
+    if (DivAccount === false) {
+        account.style.display = "block";
+        DivAccount = true;
+    } else if (DivAccount === true) {
+        account.style.display = "none";
+        DivAccount = false;
+    }
+}
+for (let i = 0; i < clickers.length; i++) {
+    if (i === 0) {
+        clickers[i].onclick = information;
+    }
+}
