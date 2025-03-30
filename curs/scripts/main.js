@@ -15,7 +15,7 @@ let DivAccount = false;
 
 const account = document.querySelector('.header__account-window');
 
-const clickers = document.getElementsByClassName("search-icon__icon");
+const clickers = document.getElementsByClassName("column__trans-account");
 
 function information() {
     if (DivAccount === false) {
