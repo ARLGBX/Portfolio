@@ -8,14 +8,24 @@ new Swiper('.workers__sliders', {
         clickable: true,
     }
 });
+new Swiper('.recent-works-slider', {
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+});
 
 
 let DivAccount = false;
 
 const account = document.querySelector('.header__account-window');
 
-const clickers = document.getElementsByClassName("column__trans-account");
+const clickersAccount = document.getElementsByClassName("column__trans-account");
 
 function information() {
     if (DivAccount === false) {
@@ -26,8 +36,25 @@ function information() {
         DivAccount = false;
     }
 }
-for (let i = 0; i < clickers.length; i++) {
+for (let i = 0; i < clickersAccount.length; i++) {
     if (i === 0) {
-        clickers[i].onclick = information;
+        clickersAccount[i].onclick = information;
+    }
+}
+
+// MODAL
+
+const modal = document.querySelector('.modalWindow');
+const dark = document.querySelector('.DARK');
+const clickersModal = document.getElementsByClassName("nav__discounts");
+
+function modalWin () {
+    dark.style.display = "block";
+    modal.style.display = "flex";
+}
+document.getElementsByClassName("DARK").addEventListener("click", function () {
+for (let i = 0; i < clickersModal.length; i++) {
+    if (i === 0) {
+        clickersModal[i].onclick = modalWin;
     }
 }

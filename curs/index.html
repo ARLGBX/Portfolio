@@ -24,11 +24,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
-
 </head>
 <body>
+	<div class="DARK"></div>
 	<header>
 		<div class="container">
 			<nav>
@@ -67,15 +65,13 @@
 										<a href="">Избранное</a>
 										<div class="header__account-line"></div>
 										<div class="header__account-exit">
-											<img src="./SVG/header__account-exit.svg" alt="image">
+											<img src="./SVG/header__account-exit.svg" alt="image" >
 											<span>Выйти</span>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<a><img src="./SVG/purchases.svg" alt="image"></a>
-
+							<a><img  src="./SVG/purchases.svg" alt="image"></a>
 						</div>
 					</div>
 				</div>
@@ -87,6 +83,26 @@
 					<span>a purchase gift starting from $50,000.</span>
 				</div>
 			</nav>
+
+			<div class="modalWindow">
+				<div class="modalWindow__content">
+					<div class="modalWindow__block-content">
+						<h2>ЗАРЕГЕСТРИРОВАТЬСЯ</h2>
+						<form>
+							<label for="modal__name">Имя*</label>
+							<input type="text" name="name" placeholder="Имя" id="modal__name">
+							<label for="modal__surname">Фамилия*</label>
+							<input type="text" name="surname" placeholder="Имя" id="modal__surname">
+							<label for="modal__email">E-mail*</label>
+							<input type="email" name="email" placeholder="Имя" id="modal__email">
+							<label for="modal__password">Пароль**</label>
+							<input type="password" name="password" placeholder="Имя" id="modal__password">
+							<span>Минимум 5 символов</span>
+						</form>
+						<button>Зарегестрироваться</button>
+					</div>
+				</div>
+			</div>
 
 
 		</div>
@@ -508,86 +524,96 @@
 					<h2 class="black-text">RECENT  <span class="white-text">WORKS</span></h2>
 					<div class="description__line new__line"></div>
 				</div>
-				<div class="swiper recent-works-slider">
+				<div class="recent-works-slider swiper">
 					<!-- Оставляем ваш класс new__recent-work, но добавляем swiper-wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Слайды остаются без изменений -->
 						<div class="swiper-slide">
-							<div class="new__card-work">
-								<div class="new__card-image">
-									<div class="new__up-card">
-										<span>NEW</span>
-										<button>
-											<img src="./SVG/like.svg" alt="image">
-										</button>
+							<div class="new__slider">
+								<div class="new__card-work">
+									<div class="new__card-image">
+										<div class="new__up-card">
+											<span>NEW</span>
+											<button>
+												<img src="./SVG/like.svg" alt="image">
+											</button>
+										</div>
+										<img class="new__image" src="./image/photo-sessions-1.jpg" alt="image">
 									</div>
-									<img class="new__image" src="./image/photo-sessions-1.jpg" alt="image">
+									<div class="new__card-content">
+										<span class="new__card-name">Mikhail Solovey</span>
+										<h3>BLACK AND WHITE</h3>
+										<span class="new__card-please">Sevastopol. RU</span>
+										<div class="new__card-line"></div>
+									</div>
+									<div class="new__under-card">
+										<span>1 000 <span>$</span></span>
+										<div class="new__under-around">
+											<img src="./SVG/purchases.svg" alt="" >
+										</div>
+									</div>
 								</div>
-								<div class="new__card-content">
-									<span class="new__card-name">Mikhail Solovey</span>
-									<h3>BLACK AND WHITE</h3>
-									<span class="new__card-please">Sevastopol. RU</span>
-									<div class="new__card-line"></div>
-								</div>
-								<div class="new__under-card">
-									<span>1 000 <span>$</span></span>
-									<div class="new__under-around">
-										<img src="./SVG/purchases.svg" alt="">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="new__slider">
+								<div class="new__card-work">
+									<div class="new__card-image">
+										<div class="new__up-card">
+											<span CLASS="new__up-price">-50%</span>
+											<button>
+												<img src="./SVG/like.svg" alt="image">
+											</button>
+										</div>
+										<img class="new__image" src="./image/photo-sessions-2.webp" alt="image">
+									</div>
+									<div class="new__card-content">
+										<span class="new__card-name">Oleg Tregubov</span>
+										<h3>PINK STYLE</h3>
+										<span class="new__card-please">Moscow. RU</span>
+										<div class="new__card-line"></div>
+									</div>
+									<div class="new__under-card">
+										<span>1 500 <span>$</span></span>
+										<div class="new__under-around">
+											<img src="./SVG/purchases.svg" alt="">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="new__card-work">
-								<div class="new__card-image">
-									<div class="new__up-card">
-										<span CLASS="new__up-price">-50%</span>
-										<button>
-											<img src="./SVG/like.svg" alt="image">
-										</button>
+							<div class="new__slider">
+								<div class="new__card-work">
+									<div class="new__card-image">
+										<div class="new__up-card">
+											<span>BEST SELLER</span>
+											<button>
+												<img src="./SVG/like.svg" alt="image">
+											</button>
+										</div>
+										<img class="new__image" src="./image/photo-sessions-3.jpeg" alt="image">
 									</div>
-									<img class="new__image" src="./image/photo-sessions-2.webp" alt="image">
-								</div>
-								<div class="new__card-content">
-									<span class="new__card-name">Oleg Tregubov</span>
-									<h3>PINK STYLE</h3>
-									<span class="new__card-please">Moscow. RU</span>
-									<div class="new__card-line"></div>
-								</div>
-								<div class="new__under-card">
-									<span>1 500 <span>$</span></span>
-									<div class="new__under-around">
-										<img src="./SVG/purchases.svg" alt="">
+									<div class="new__card-content">
+										<span class="new__card-name">Alexander Shkonly</span>
+										<h3>STREETS OF ITALY</h3>
+										<span class="new__card-please">Florence. IT</span>
+										<div class="new__card-line"></div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="new__card-work">
-								<div class="new__card-image">
-									<div class="new__up-card">
-										<span>BEST SELLER</span>
-										<button>
-											<img src="./SVG/like.svg" alt="image">
-										</button>
-									</div>
-									<img class="new__image" src="./image/photo-sessions-3.jpeg" alt="image">
-								</div>
-								<div class="new__card-content">
-									<span class="new__card-name">Alexander Shkonly</span>
-									<h3>STREETS OF ITALY</h3>
-									<span class="new__card-please">Florence. IT</span>
-									<div class="new__card-line"></div>
-								</div>
-								<div class="new__under-card">
-									<span>5 000 <span>$</span></span>
-									<div class="new__under-around">
-										<img src="./SVG/purchases.svg" alt="">
+									<div class="new__under-card">
+										<span>5 000 <span>$</span></span>
+										<div class="new__under-around">
+											<img src="./SVG/purchases.svg" alt="">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>

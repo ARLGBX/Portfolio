@@ -20,6 +20,95 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.DARK {
+	display: none;
+	position: absolute;
+	z-index: 998;
+	width: 10000vh;
+	height: 1844vh;
+	background-color: rgba(0, 0, 0, 0.63);
+}
+
+.modalWindow {
+	display: none;
+	position: relative;
+	justify-content: center;
+}
+.modalWindow__content {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	z-index: 999999999	;
+	top: 50%;
+	width: 578px;
+	height: 828px;
+	border: solid 2px black;
+}
+.modalWindow__block-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #F4F5EF;
+	width: 478px;
+	height: 728px;
+	gap: 30px;
+}
+.modalWindow__block-content > h2 {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: 0.1em;
+	color: #000;
+}
+.modalWindow__block-content > form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.modalWindow__block-content > button {
+	background-color: #F4F5EF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #000;
+	width: 255px;
+	height: 50px;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #000;
+
+}
+.modalWindow__block-content > form > label {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 100%;
+	color: #000;
+	padding-top: 30px;
+}
+.modalWindow__block-content > form > input {
+	border: 1px solid #c4c4c4;
+	width: 255px;
+	height: 20px;
+	background-color: #F4F5EF;
+	padding: 20px;
+}
+.modalWindow__block-content > form > span {
+	font-family: var(--font-family) ,sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #c4c4c4;
+
+}
+
+
 .nav__function {
 	display: flex;
 	justify-content: space-around;
@@ -862,20 +951,29 @@ body {
 
 /*new*/
 
+.recent-works-slider {
+	display: flex;
+	justify-content: center;
+}
 .new__tagline {
     position: relative;
 }
 .new__line {
     top: 120%;
 }
+.new__slider {
+	display: flex;
+	justify-content: center;
+	min-height: 600px;
+}
 .new__card-work {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
 }
 .new__card-image {
     display: flex;
+	max-width: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
