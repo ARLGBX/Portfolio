@@ -20,6 +20,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.modal-help__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .DARK {
 	display: none;
 	position: absolute;

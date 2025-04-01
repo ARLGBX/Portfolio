@@ -52,7 +52,6 @@ function modalWin () {
     dark.style.display = "block";
     modal.style.display = "flex";
 }
-document.getElementsByClassName("DARK").addEventListener("click", function () {
 for (let i = 0; i < clickersModal.length; i++) {
     if (i === 0) {
         clickersModal[i].onclick = modalWin;
