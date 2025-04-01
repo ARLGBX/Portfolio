@@ -57,3 +57,17 @@ for (let i = 0; i < clickersModal.length; i++) {
         clickersModal[i].onclick = modalWin;
     }
 }
+
+// POPAP HELP
+
+const popap = document.querySelector('.modal-help');
+const clickersPopap = document.getElementsByClassName("modal-help");
+
+function PopapWin () {
+    popap.style.top = '10%';
+}
+for (let i = 0; i < clickersPopap.length; i++) {
+    if (i === 0) {
+        clickersPopap[i].onclick = PopapWin;
+    }
+}

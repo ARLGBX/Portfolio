@@ -30,21 +30,28 @@
 	<div class="modal-help">
 		<div class="modal-help__content">
 			<div class="help__header">
-
+				<h2>Нужна помощь?</h2>
 			</div>
 			<div class="help__info">
 				<form>
 					<label for="help__name"></label>
-					<input type="text" name="name" placeholder="Имя" id="help__name">
+					<input type="text" name="name" placeholder="Имя " id="help__name">
+				</form>
+				<form>
 					<label for="help__telephone"></label>
-					<input type="text" name="telephone" placeholder="Имя" id="help__telephone">
-					<label for="help__email"></label>
-					<input type="email" name="email" placeholder="Имя" id="help__email">
-					<label for="help__comment"></label>
-					<input type="textarea" name="name" placeholder="Имя" id="help__comment">
-
+					<input type="text" name="telephone" placeholder="Контактный телефон " id="help__telephone">
+				</form>
+				<form>
+					<label for="help__email">E-mail</label>
+					<input type="email" name="email" placeholder="email" id="help__email">
+				</form>
+				<form>
+					<label for="help__comment">Сообщение</label>
+					<input type="text" name="message" id="help__comment" placeholder="">
 				</form>
 			</div>
+			<button class="help__button">отправить</button>
+			<span>Общаемся с помощью <b>Cleversite.ru</b></span>
 		</div>
 	</div>
 	<header>
@@ -71,7 +78,6 @@
 							<img src="./SVG/language.svg" alt="image">
 						</div>
 						<div class="search-icon__icon">
-							<a href=""><img src="./SVG/like.svg" alt="image"></a>
 							<div class="header__container-account">
 								<a><img src="./SVG/personal-account.svg" alt="image" id="account-window" class="column__trans-account"></a>
 								<div class="header__account-window">
@@ -545,9 +551,7 @@
 					<div class="description__line new__line"></div>
 				</div>
 				<div class="recent-works-slider swiper">
-					<!-- Оставляем ваш класс new__recent-work, но добавляем swiper-wrapper -->
 					<div class="swiper-wrapper">
-						<!-- Слайды остаются без изменений -->
 						<div class="swiper-slide">
 							<div class="new__slider">
 								<div class="new__card-work">

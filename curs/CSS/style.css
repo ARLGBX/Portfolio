@@ -17,19 +17,110 @@
 	margin: 0 auto;
 }
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 }
-.modal-help__content {
+
+/*pop-up help*/
+
+.modal-help {
+	position: sticky;
+	z-index: 99999999999999999;
+	top: 90%;
+	margin-left: 70%;
+	border-radius: 30px 30px 0 0;
+	width: 375px;
+	height: 594px;
+	box-shadow: 0 50px 30px 0 rgba(0, 0, 0, 0.25);
+	background: #f4f5ef;
+	margin-top: -594px;  /* "Поднимаем" контент вверх, убирая занимаемое место */
+}
+.help__header {
+	border-radius: 30px 30px 0 0;
+	width: 375px;
+	height: 63px;
+	background: #333;
+	opacity: 0.5;
+}
+.help__header > h2 {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	color: #fff;
+	margin: 25px 0 30px 50px;
+}
+.modal-help__content, .help__info, .help__info > form {
 	display: flex;
 	flex-direction: column;
+}
+.modal-help__content {
 	align-items: center;
 }
+.modal-help__content > span {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: #000;
+}
+.help__info {
+	padding-top: 30px;
+	gap: 20px;
+	margin: 0 30px 0 30px;
+}
+.help__info > form > input {
+	border: none;
+	border-bottom: 1px solid #333;
+	width: 291px;
+	height: 30px;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #000;
+
+}
+.help__info > form > label {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #000;
+	opacity: 0.6;
+
+}
+#help__comment {
+	border: 1px solid #333;
+	border-radius: 4px;
+	width: 291px;
+	height: 100px;
+	margin-top: 10px;
+	text-align: left;     /* Горизонтальное выравнивание (left/right) */
+	vertical-align: top !important;  /* Вертикальное выравнивание (top/bottom) */
+	padding: 8px;         /* Внутренние отступы, чтобы текст не прилипал к краям */
+
+}
+.help__button {
+	border: 2px solid #000;
+	width: 250px;
+	height: 56px;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	margin: 20px 0 20px 0;
+}
+/*modal window*/
+
 .DARK {
 	display: none;
 	position: absolute;
 	z-index: 998;
-	width: 10000vh;
+	width: 100%;
 	height: 1844vh;
 	background-color: rgba(0, 0, 0, 0.63);
 }
