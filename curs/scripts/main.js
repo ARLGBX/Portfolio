@@ -1,3 +1,31 @@
+let registation = false;
+let NAME;
+let Surname;
+let Email;
+let Password;
+
+document.getElementById("help__name").addEventListener("submit", function (event) {
+    NAME = event.target.value;
+})
+document.getElementById("help__telephone").addEventListener("submit", function (event) {
+    Surname = event.target.value;
+})
+document.getElementById("help__email").addEventListener("submit", function (event) {
+    Email = event.target.value;
+})
+document.getElementById("help__comment").addEventListener("submit", function (event) {
+    Password = event.target.value;
+})
+
+const inputs = document.querySelectorAll("#help__info input");
+const label = document.querySelectorAll("#help__info label");
+
+for (let i = 0; i < inputs.length; i++) {
+    if (inputs.value.trim === "") {
+        label.textContent = "DQWDQWDQ"
+    }
+}
+
 new Swiper('.workers__sliders', {
     navigation: {
         nextEl: '.swiper-button-next',
