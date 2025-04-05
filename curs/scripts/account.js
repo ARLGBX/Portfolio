@@ -46,3 +46,8 @@ for (let i = 0; i < clickers.length; i++) {
         clickers[i].onclick = Orders;
     }
 }
+
+const savedDataString = localStorage.getItem('userData');
+const savedData = JSON.parse(savedDataString);
+
+const emailPlace = savedData.name;

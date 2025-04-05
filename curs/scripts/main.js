@@ -1,30 +1,24 @@
 let registation = false;
-let NAME;
-let Surname;
-let Email;
-let Password;
-
-document.getElementById("help__name").addEventListener("submit", function (event) {
-    NAME = event.target.value;
-})
-document.getElementById("help__telephone").addEventListener("submit", function (event) {
-    Surname = event.target.value;
-})
-document.getElementById("help__email").addEventListener("submit", function (event) {
-    Email = event.target.value;
-})
-document.getElementById("help__comment").addEventListener("submit", function (event) {
-    Password = event.target.value;
-})
-
 const inputs = document.querySelectorAll("#help__info input");
 const label = document.querySelectorAll("#help__info label");
 
-for (let i = 0; i < inputs.length; i++) {
-    if (inputs.value.trim === "") {
-        label.textContent = "DQWDQWDQ"
+document.getElementById("modal__button").addEventListener('click', function() {
+    const username = document.getElementById('modal__name').value;
+    const surname = document.getElementById('modal__surname').value;
+    const email = document.getElementById('modal__email').value;
+    const Password = document.getElementById('modal__password').value;
+
+    const userData = {
+        username: username,
+        surname: surname,
+        email: email,
+        password: Password,
     }
-}
+    const userJson = JSON.stringify(userData);
+    localStorage.setItem('user', userJson);
+
+    registation = true;
+})
 
 new Swiper('.workers__sliders', {
     navigation: {
