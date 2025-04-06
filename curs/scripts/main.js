@@ -1,24 +1,5 @@
-let registation = false;
-const inputs = document.querySelectorAll("#help__info input");
-const label = document.querySelectorAll("#help__info label");
 
-document.getElementById("modal__button").addEventListener('click', function() {
-    const username = document.getElementById('modal__name').value;
-    const surname = document.getElementById('modal__surname').value;
-    const email = document.getElementById('modal__email').value;
-    const Password = document.getElementById('modal__password').value;
-
-    const userData = {
-        username: username,
-        surname: surname,
-        email: email,
-        password: Password,
-    }
-    const userJson = JSON.stringify(userData);
-    localStorage.setItem('user', userJson);
-
-    registation = true;
-})
+// SLIDER
 
 new Swiper('.workers__sliders', {
     navigation: {
@@ -42,43 +23,60 @@ new Swiper('.recent-works-slider', {
     }
 });
 
+// REGISTRATION DATA SAVE
 
 let DivAccount = false;
+let registation = false;
 
-const account = document.querySelector('.header__account-window');
 
-const clickersAccount = document.getElementsByClassName("column__trans-account");
+if (registation === true) {
+    const account = document.querySelector('.header__account-window');
+    const clickersAccount = document.getElementsByClassName("column__trans-account");
 
-function information() {
-    if (DivAccount === false) {
-        account.style.display = "block";
-        DivAccount = true;
-    } else if (DivAccount === true) {
-        account.style.display = "none";
-        DivAccount = false;
+    function information() {
+        if (DivAccount === false) {
+            account.style.display = "block";
+            DivAccount = true;
+        } else if (DivAccount === true) {
+            account.style.display = "none";
+            DivAccount = false;
+        }
     }
-}
-for (let i = 0; i < clickersAccount.length; i++) {
-    if (i === 0) {
-        clickersAccount[i].onclick = information;
+    for (let i = 0; i < clickersAccount.length; i++) {
+        if (i === 0) {
+            clickersAccount[i].onclick = information;
+        }
     }
+} else if (registation === false) {
+    const modal = document.querySelector('.modalWindow');
+    const dark = document.querySelector('.DARK');
+
+    document.getElementById("account-window").addEventListener('click', function (event) {
+        modal.style.display = "block";
+        dark.style.display = "flex";
+    });
+
+    document.addEventListener('click', function (event) {
+        const isClickInsideModal = modal.contains(event.target);
+        const isClickOnOpenButton = event.target.closest("#account-window");
+
+        if (!isClickOnOpenButton) {
+            modal.style.display = "none";
+            dark.style.display = "none";
+        }
+    });
+
+
+
 }
 
-// MODAL
+// ACCOUNT WINDOW
 
-const modal = document.querySelector('.modalWindow');
-const dark = document.querySelector('.DARK');
-const clickersModal = document.getElementsByClassName("nav__discounts");
 
-function modalWin () {
-    dark.style.display = "block";
-    modal.style.display = "flex";
-}
-for (let i = 0; i < clickersModal.length; i++) {
-    if (i === 0) {
-        clickersModal[i].onclick = modalWin;
-    }
-}
+
+// REGISTRATION MODAL
+
+
 
 // POPAP HELP
 

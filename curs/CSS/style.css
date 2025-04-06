@@ -227,6 +227,7 @@ body {
 	display: none;
 }
 .nav__search-icon {
+	possition: reletive;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -250,6 +251,7 @@ body {
 	gap: 10px;
 }
 .search-icon__icon {
+	position: relative;
 	display: flex;
 	gap: 20px;
 }
@@ -281,10 +283,9 @@ body {
     right: 10%;
 	top: 80px;
 	overflow: hidden;
-	z-index: 1000000000000000000000000000000000000000000000000;
 	background-color: #FFFFFF;
 	border: solid 1px #C4C4C4;
-	margin-top: 100px;
+	margin-top: -30px;
 }
 .header__account-content {
 	display: flex;
