@@ -30,6 +30,9 @@ let registation = false;
 
 
 if (registation === true) {
+
+    // ACCOUNT WINDOW
+
     const account = document.querySelector('.header__account-window');
     const clickersAccount = document.getElementsByClassName("column__trans-account");
 
@@ -48,6 +51,9 @@ if (registation === true) {
         }
     }
 } else if (registation === false) {
+
+    // REGISTRATION MODAL
+
     const modal = document.querySelector('.modalWindow');
     const dark = document.querySelector('.DARK');
 
@@ -60,21 +66,37 @@ if (registation === true) {
         const isClickInsideModal = modal.contains(event.target);
         const isClickOnOpenButton = event.target.closest("#account-window");
 
-        if (!isClickOnOpenButton) {
+        if (!isClickOnOpenButton && !isClickInsideModal) {
             modal.style.display = "none";
             dark.style.display = "none";
         }
     });
 
+    function saveDate() {
+        const name = document.getElementById("modal__name").value;
+        const surname = document.getElementById("modal__surname").value;
+        const email = document.getElementById("modal__email").value;
+        const password = document.getElementById("modal__password").value;
+
+        const userData = {
+            name: name,
+            surname: surname,
+            email: email,
+            password: password
+        };
+
+        const normalDate = JSON.stringify(userData);
+        localStorage.setItem('userData', normalDate);
+
+        registation = true;
+    }
+
+    document.getElementById("modal__button").addEventListener('click', saveDate);
 
 
 }
 
-// ACCOUNT WINDOW
 
-
-
-// REGISTRATION MODAL
 
 
 
@@ -84,7 +106,7 @@ const popap = document.querySelector('.modal-help');
 const clickersPopap = document.getElementsByClassName("modal-help");
 
 function PopapWin () {
-    popap.style.top = '10%';
+    popap.style.top = '100%';
 }
 for (let i = 0; i < clickersPopap.length; i++) {
     if (i === 0) {
