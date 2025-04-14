@@ -114,6 +114,36 @@ body {
 	color: #000;
 	margin: 20px 0 20px 0;
 }
+
+/*selection dropdown*/
+
+.search-icon__choice {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header__language-menu {
+	position: relative;
+	width: 50px;
+	height: 30px;
+}
+.language__menu-language {
+	position: absolute;
+	border: solid 1px #C4C4C4;
+	padding: 5px;
+}
+.language__menu-language:last-child {
+	display: none;
+}
+.language__menu-link {
+	text-decoration: none;
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	color: #000;
+}
 /*modal window*/
 
 .DARK {
