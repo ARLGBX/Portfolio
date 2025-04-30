@@ -23,6 +23,8 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </head>
 <body>
@@ -64,25 +66,25 @@
 						<a href=""> Photo sessions </a>
 						<a href=""> Services </a>
 					</div>
-					<img src="SVG/logo.svg" alt="image">
+					<img class="nav__logo" src="SVG/logo.svg" alt="image">
 					<div class="nav__search-icon">
-						<form action="/submit-form" method="post">
-							<div class="search-icon__input">
-								<label for="search"><img src="./SVG/Vector.svg" alt="image"></label>
-								<input type="text" name="search" id="search" placeholder="Search">
-							</div>
-						</form>
-						<div class="search-icon__choice">
-							<div class="header__language-menu">
-								<div class="language__menu-language">
-									<a href="" class="language__menu-link">ENG</a>
-								</div>
-								<div class="language__menu-language">
-									<a href="" class="language__menu-link">RUS</a>
-								</div>
-							</div>
-							<img src="./SVG/drop-down.svg" alt="image">
-						</div>
+<!--						form action="/submit-form" method="post">-->
+<!--						<div class="search-icon__input">-->
+<!--							<label for="search"><img src="./SVG/Vector.svg" alt="image"></label>-->
+<!--							<input type="text" name="search" id="search" placeholder="Search">-->
+<!--						</div>-->
+<!--						</form><-->
+<!--						<div class="search-icon__choice">-->
+<!--							<div class="header__language-menu">-->
+<!--								<div class="language__menu-language">-->
+<!--									<a href="" class="language__menu-link">ENG</a>-->
+<!--								</div>-->
+<!--								<div class="language__menu-language-two">-->
+<!--									<a href="" class="language__menu-link">RUS</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<img class="search-icon__drop" src="./SVG/drop-down.svg" alt="image">-->
+<!--						</div>-->
 						<div class="search-icon__icon">
 							<div class="header__container-account">
 								<a><img src="./SVG/personal-account.svg" alt="image" id="account-window" class="column__trans-account"></a>
@@ -108,11 +110,13 @@
 					</div>
 				</div>
 				<div class="nav__discounts">
-					<span>discounts for the summer season:</span>
-					<div class="discounts__partition"></div>
-					<span>discount on purchases starting from $20,000.</span>
-					<div class="discounts__partition"></div>
-					<span>a purchase gift starting from $50,000.</span>
+					<div class="nav__discounts-content">
+						<span>discounts for the summer season:</span>
+						<div class="discounts__partition"></div>
+						<span>discount on purchases starting from $20,000.</span>
+						<div class="discounts__partition"></div>
+						<span>a purchase gift starting from $50,000.</span>
+					</div>
 				</div>
 			</nav>
 
@@ -140,24 +144,24 @@
 		</div>
 		<div class="header__resume">
 			<div class="resume__stury">
-				<h1>
+				<h1 class="resume__stury-h1">
 					Hi, I'm James Mirro & <br>
 					<span>I'M A PHOTOGRAPHER</span>
 				</h1>
-				<p>
+				<p class="resume__paragraph-one">
 					I’m James Mirro, and photography has always been my way of telling
 					stories. I started Mirror Studio with a simple goal: to capture
 					real, authentic moments. Early on, I offered free shoots to
 					locals, and word spread about my ability to make people feel at
 					ease.
 				</p>
-				<p>
+				<p class="resume__paragraph-two">
 					One day, a couple came in for their wedding photos. They wanted
 					something unique, something that felt like them. I listened,
 					connected, and created something unforgettable. That shoot taught
 					me the power of trust and storytelling through my lens.
 				</p>
-				<p>
+				<p class="resume__paragraph-three">
 					Now, Mirro Studio isn’t just a business—it’s where moments become
 					memories, and I’m honored to be the one holding the camera.
 				</p>
@@ -168,7 +172,7 @@
 	<main>
 		<section class="welcome">
 			<div class="container">
-				<h2>
+				<h2 class="welcome__name-studio">
 					Mirro <br>
 					Studio
 				</h2>
@@ -179,7 +183,7 @@
 								<img class="welcome__adapt welcome__pictur-two" src="./SVG/picture-4.svg" alt="image">
 							</div>
 						</div>
-						<span>welcome to</span>
+						<span class="welcome__hello">welcome to</span>
 						<div class="welcome__pictur">
 							<img class="welcome__pictur-one" src="./SVG/picture-1.svg" alt="image">
 						</div>
@@ -652,36 +656,36 @@
 
 		<!--gift-->
 
-		<section class="gift">
-			<div class="container">
-				<div class="workers__tagline">
-					<h2 class="black-text gift__tagline">GIFTS</h2>
-					<div class="description__line-price"></div>
-				</div>
-				<div class="gift__content">
-					<div class="gift__block-product">
-						<div class="gift__product-text">
-							<h2>book <br>
-								“The co-pilot's <br>
-								birthday”</h2>
-							<span>Alexander Wojciechowski</span>
-							<div class="gift__product-line"></div>
-							<span class="gift__price">20 <span>$</span></span>
-						</div>
-						<img src="./SVG/gift-image.svg" alt="image">
+<!--		<section class="gift">-->
+<!--			<div class="container">-->
+<!--				<div class="workers__tagline">-->
+<!--					<h2 class="black-text gift__tagline">GIFTS</h2>-->
+<!--					<div class="description__line-price"></div>-->
+<!--				</div>-->
+<!--				<div class="gift__content">-->
+<!--					<div class="gift__block-product">-->
+<!--						<div class="gift__product-text">-->
+<!--							<h2>book <br>-->
+<!--								“The co-pilot's <br>-->
+<!--								birthday”</h2>-->
+<!--							<span>Alexander Wojciechowski</span>-->
+<!--							<div class="gift__product-line"></div>-->
+<!--							<span class="gift__price">20 <span>$</span></span>-->
+<!--						</div>-->
+<!--						<img src="./SVG/gift-image.svg" alt="image">-->
 
-					</div>
-					<div class="gift__block-text">
-						<p>Exclusive gifts from our authors can be purchased online. Choose from the electronic catalog and order original items. </p>
-						<div class="workers__transition gift__button">
-							<button class="workers__button">
-								choose a gift
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<!--					</div>-->
+<!--					<div class="gift__block-text">-->
+<!--						<p>Exclusive gifts from our authors can be purchased online. Choose from the electronic catalog and order original items. </p>-->
+<!--						<div class="workers__transition gift__button">-->
+<!--							<button class="workers__button">-->
+<!--								choose a gift-->
+<!--							</button>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
 
 
 

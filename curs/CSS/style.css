@@ -34,7 +34,7 @@ body {
 	height: 594px;
 	box-shadow: 0 50px 30px 0 rgba(0, 0, 0, 0.25);
 	background: #f4f5ef;
-	margin-top: -594px;  /* "Поднимаем" контент вверх, убирая занимаемое место */
+	margin-top: 300px;
 }
 .help__header {
 	border-radius: 30px 30px 0 0;
@@ -128,13 +128,15 @@ body {
 	width: 50px;
 	height: 30px;
 }
-.language__menu-language {
-	position: absolute;
-	border: solid 1px #C4C4C4;
+.language__menu-language, .language__menu-language-two {
+	border: none;
 	padding: 5px;
 }
-.language__menu-language:last-child {
+.language__menu-language-two {
 	display: none;
+}
+.search-icon__drop {
+	padding-top: 0;
 }
 .language__menu-link {
 	text-decoration: none;
@@ -252,9 +254,16 @@ body {
 	line-height: 100%;
 	letter-spacing: 0.06em;
 	color: #000;
+	transition: 0.5s;
+}
+.nav__links > a:hover {
+	color: #ff4823;
 }
 .nav__icon {
 	display: none;
+}
+.nav__logo {
+	padding-right: 350px;
 }
 .nav__search-icon {
 	possition: reletive;
@@ -277,8 +286,8 @@ body {
 	right: 30px;
 }
 .search-icon__choice {
+	padding-top: 20px;
 	display: flex;
-	gap: 10px;
 }
 .search-icon__icon {
 	position: relative;
@@ -289,16 +298,19 @@ body {
 	cursor: pointer;
 }
 .nav__discounts {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
 	background-color: #000000;
 	max-width: 100vw;
 	height: 30px;
 	margin: auto;
+	overflow: hidden;
 }
-.nav__discounts > span {
+.nav__discounts-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.nav__discounts-content > span {
 	font-family: var(--font-family), sans-serif;
 	font-weight: 400;
 	font-size: 14px;
@@ -378,7 +390,7 @@ body {
 	align-items: center;
 	max-width: 552px;
 }
-.resume__stury > h1 {
+.resume__stury-h1 {
 	font-family: var(--font-family), sans-serif;
 	font-size: 55px;
 }
@@ -483,7 +495,7 @@ body {
 	align-items: end;
 	justify-content: flex-end;
 	width: 300px;
-	padding-top: 50px;
+	padding-top: 120px;
 	height: 150px;
 }
 #welcome__line {
@@ -570,7 +582,7 @@ body {
 .services__block {
 	max-width: 379px;
 	min-height: 100%;
-	background-color: #e0e3ff;
+	background-color: rgba(255, 72, 35, 0.7);
 	border-radius: 30px;
 	margin: 10px;
 }
