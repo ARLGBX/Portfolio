@@ -167,14 +167,15 @@ header {
 	justify-content: center;
 }
 .modalWindow__content {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
 	z-index: 999999999;
 	top: 50%;
-	left: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Точное центрирование */
 	width: 578px;
 	height: 828px;
 	border: solid 2px black;
@@ -249,10 +250,52 @@ header {
 	display: flex;
 	justify-content: space-around;
 }
+.nav__vector {
+	width: 50px;
+	height: 50px;
+	display: none;
+	cursor: pointer;
+}
 .nav__links {
 	display: flex;
 	align-items: center;
 	gap: 30px;
+}
+.burder-menu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	left: -300px;
+	width: 300px;
+	height: 100vh;
+	background-color: black;
+}
+
+.burder-menu > span {
+	font-family: var(--font-family), sans-serif;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.burder-menu > a {
+	font-family: var(--font-family), sans-serif;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 100%;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.burder-menu > a:hover {
+	color: #ff4823;
 }
 .nav__links > a {
 	font-family: var(--font-family), sans-serif;
@@ -995,11 +1038,11 @@ header {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-	color: #ff5722;
+	color: #ff4823;
 	font-weight: bold;
 }
 .swiper-pagination-bullet-active {
-	color: #ff5722; /* Оранжевый цвет для активной точки */
+	color: #ff4823;
 }
 
 .workers__face-image {
@@ -1010,7 +1053,7 @@ header {
 	transition: 0.3s;
 }
 .workers__face-image:hover {
-	box-shadow: 0 0 20px 5px orangered;
+	box-shadow: 0 0 20px 5px #ff4823;
 	cursor: pointer;
 }
 .workers__content {
@@ -1723,8 +1766,11 @@ footer {
 	.nav__links > a:not(:last-child){
 		display: none;
 	}
+	.nav__vector {
+		display: block;
+	}
 	.nav__logo {
-		padding: 0;
+		margin: 0;
 	}
 	.nav__icon {
 		display: block;

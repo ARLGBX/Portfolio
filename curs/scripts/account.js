@@ -15,6 +15,20 @@ function information() {
         DivOrders = true;
     }
 }
+function animationConact() {
+    gsap.from(".start", {
+        opacity: 0,
+        duration: 10,
+        delay: 2,
+        ease: "back.out(5)",
+        scrollTrigger: {
+            trigger: ".start",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            markers: false
+        }
+    });
+}
 function PlacesResidence  () {
     if (DivContact === true) {
         account.style.display = "none";
@@ -40,7 +54,9 @@ for (let i = 0; i < clickers.length; i++) {
         clickers[i].onclick = information;
     }
     if (i === 1) {
+        clickers[i].onclick = animationConact;
         clickers[i].onclick = PlacesResidence;
+
     }
     if (i === 2) {
         clickers[i].onclick = Orders;

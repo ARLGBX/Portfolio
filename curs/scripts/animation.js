@@ -1,5 +1,4 @@
 if (window.innerWidth > 1020) {
-
 // прокрутка скидок
     let tl = gsap.timeline({ defaults: { duration: 1,  } })
     tl.from(
@@ -20,7 +19,46 @@ if (window.innerWidth > 1020) {
         { opacity: 1, x: 2000, y: 0, ease: "power1.inOut",duration: 1}
     )
 
+    //анимации ссылок
+    const fl = gsap.timeline({ repeat: -1, repeatDelay: 1, defaults: { ease: "power1.inOut", duration: 0.5, } });
+    fl.fromTo(
+        '#nav__links-one',
+        { opacity: 0, y: 0, },
+        { opacity: 1, y: -20, ease: "back.out(1.7)", duration: 0.5}
+    )
+    fl.fromTo(
+        '#nav__links-one',
+        {y: 0},
+        { y: 0, ease: "power1.inOut",duration: 1}
+    )
+    dl.to({}, { duration: 2});
+    fl.fromTo(
+        '#nav__links-two',
+        { y: 0, },
+        { opacity: 1, y: -20, ease: "back.out(1.7)", duration: 0.5}
+    )
+    fl.fromTo(
+        '#nav__links-two',
+        {y: 0},
+        { y: 0, ease: "power1.inOut",duration: 1}
+    )
+    dl.to({}, { duration: 2});
+    fl.fromTo(
+        '#nav__links-three',
+        { y: 0, },
+        { opacity: 1, y: -20, ease: "back.out(1.7)", duration: 0.5}
+    )
+    fl.fromTo(
+        '#nav__links-three',
+        {y: 0},
+        { y: 0, ease: "power1.inOut",duration: 1}
+    )
+
+
 // приветственная страница
+
+
+
 
     let rt = gsap.timeline({ defaults: { duration: 0.5,} })
     rt.fromTo(
@@ -1061,4 +1099,105 @@ if (window.innerWidth > 1020) {
 //     }
 // });
 // gsap.
+    tl.fromTo(
+        '#review__block-one',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    tl.fromTo(
+        '#review__block-two',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1, }
+    )
+    tl.fromTo(
+        '#review__block-three',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    tl.fromTo(
+        '#review__block-four',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    let wt = gsap.timeline({ defaults: { duration: 1,  } })
+
+    wt.fromTo(
+        '#review__block-five',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    wt.fromTo(
+        '#review__block-seven',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    wt.fromTo(
+        '#review__block-eight',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    wt.fromTo(
+        '#review__block-nine',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+
+    let gt = gsap.timeline({ defaults: { duration: 1,  } })
+
+    gt.fromTo(
+        '#services__block-one',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    gt.fromTo(
+        '#services__block-two',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    gt.fromTo(
+        '#services__block-three',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+
+    let yt = gsap.timeline({ defaults: { duration: 1,  } })
+
+
+    yt.fromTo(
+        '#services__block-four',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    yt.fromTo(
+        '#services__block-five',
+        { opacity: 0, x: 500 },
+        { opacity: 100, x: 0, duration: 1,}
+    )
+    //аккаунт анимации
+
+    gsap.fromTo(
+        '.my-account__tagline',
+        { opacity: 0, x: -500 },
+        { opacity: 100, x: 0, duration: 2, delay: 1.5, ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".block__set-one",
+                start: "top 90%",
+                toggleActions: "play none none none",
+                markers: false
+            }}
+    )
+    gsap.fromTo(
+        '.column__transitions-one',
+        { opacity: 0},
+        { opacity: 1, duration: 2, delay: 1.5, ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".block__set-one",
+                start: "top 90%",
+                toggleActions: "play none none none",
+                markers: false
+            }}
+    )
 }
+
+
+

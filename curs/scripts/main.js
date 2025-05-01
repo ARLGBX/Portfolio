@@ -7,28 +7,19 @@ if (!existingData) {
     existingData = { registered: false };
     localStorage.setItem('userData', JSON.stringify(existingData));
 }
-
-
-
-
 if (existingData.registered === true) {
 
     // ACCOUNT WINDOW
-
     const account = document.querySelector('.header__account-window');
 
-
     document.getElementById("account-window").addEventListener('click', function (event) {
-       let wndo = document.querySelector(".header__account-window");
-        wndo.style.display = "block";
+        account.style.display = "block";
     });
-
     document.addEventListener('click', function (event) {
         const isClickInsideModal = account.contains(event.target);
         const isClickOnOpenButton = event.target.closest("#account-window");
-
         if (!isClickOnOpenButton && !isClickInsideModal) {
-
+            account.style.display = "none";
         }
     });
 } else if (existingData.registered === false) {
@@ -74,9 +65,30 @@ if (existingData.registered === true) {
 }
 
 
+//выход из аккаунта
 
+document.getElementById("account-window-exit").addEventListener('click', function (event) {
+    localStorage.removeItem('userData');
+    window.location.reload();
+});
 
+//бургер меню
 
+document.getElementById("nav__vector").addEventListener('click', function (event) {
+    gsap.fromTo(
+        '.burder-menu',
+        { opacity: 0, x: 0},
+        { opacity: 1, x: 300, duration: 1}
+    )
+});
+
+document.getElementById("back-burger").addEventListener('click', function (event) {
+        gsap.fromTo(
+            '.burder-menu',
+            { opacity: 0, x: 300},
+            { opacity: 1, x: 0, duration: 0.5}
+        )
+})
 
 
 
