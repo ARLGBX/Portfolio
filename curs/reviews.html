@@ -18,6 +18,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style-reviews.css">
+
+  <!--js-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 </head>
 <body>
 <header>
@@ -26,8 +34,8 @@
       <div class="nav__function">
         <div class="nav__links">
           <a href="./reviews.html">Отзывы</a>
-          <a href="./collections.html"> Photo sessions </a>
-          <a href="./services.html"> Services </a>
+          <a href="./collections.html"> Фотосессии </a>
+          <a href="./services.html"> Услуги </a>
         </div>
         <a href="./index.html">
           <img class="nav__logo" src="SVG/logo.svg" alt="image">
@@ -60,8 +68,6 @@
                 <div class="header__account-content">
                   <a href="./user-account.html">Данные аккаунта</a>
                   <a href="">Контактные данные</a>
-                  <a href="">Мои заказы</a>
-                  <a href="">Избранное</a>
                   <div class="header__account-line"></div>
                   <div class="header__account-exit">
                     <img src="./SVG/header__account-exit.svg" alt="image" >
@@ -70,7 +76,6 @@
                 </div>
               </div>
             </div>
-            <a><img  src="./SVG/purchases.svg" alt="image"></a>
           </div>
         </div>
       </div>
@@ -264,7 +269,7 @@
         <!--						<a href="offer.html">Публичная оферта</a>-->
         <!--						<a href="">Политика проведения конференций</a>-->
         <!--					</div>-->
-        <div class="footer__information-block">
+        <div class="footer__information-block" id="footer__block-one">
           <h2>КОНТАКТЫ</h2>
           <a href="">+7 (812) 438-01-14</a>
           <a href="">info@molbertgallery.ru</a>
@@ -273,7 +278,7 @@
           <span>Bolshaya Konyushennaya str., 11</span>
         </div>
       </div>
-      <div class="footer__information-wrap">
+      <div class="footer__information-wrap" id="footer__block-two">
         <div class="footer__information-block">
           <h2>О НАС</h2>
           <a href="./services.html">Реквизиты</a>
@@ -286,7 +291,7 @@
         <!--					</div>-->
       </div>
 
-      <div class="footer__information-block">
+      <div class="footer__information-block" id="footer__block-three">
         <div class="footer__social-network">
           <h2>Где нас можно найти:</h2>
           <div class="footer__social-media">
@@ -310,4 +315,6 @@
   </div>
 </footer>
 </body>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/animation.js"></script>
 </html>

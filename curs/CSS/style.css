@@ -31,7 +31,7 @@ header {
 .modal-help {
 	position: fixed;
 	z-index: 99999999999999999;
-	top: 160%;
+	top: 40%;
 	margin-left: 70%;
 	border-radius: 30px 30px 0 0;
 	width: 375px;
@@ -157,7 +157,7 @@ header {
 	position: absolute;
 	z-index: 998;
 	width: 100%;
-	height: 1844vh;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.63);
 }
 
@@ -172,8 +172,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-	z-index: 999999999	;
+	z-index: 999999999;
 	top: 50%;
+	left: 30%;
 	width: 578px;
 	height: 828px;
 	border: solid 2px black;
@@ -214,7 +215,12 @@ header {
 	line-height: 100%;
 	text-transform: uppercase;
 	color: #000;
-
+	transition: 0.1s;
+	cursor: pointer;
+}
+.modalWindow__block-content > button:active {
+	color: #FFFFFF;
+	background: #000000;
 }
 .modalWindow__block-content > form > label {
 	font-family: var(--font-family), sans-serif;
@@ -237,9 +243,7 @@ header {
 	font-size: 14px;
 	line-height: 100%;
 	color: #c4c4c4;
-
 }
-
 
 .nav__function {
 	display: flex;
@@ -267,10 +271,10 @@ header {
 	display: none;
 }
 .nav__logo {
-	padding-right: 350px;
+	margin-right: 350px;
 }
 .nav__search-icon {
-	possition: reletive;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -322,12 +326,13 @@ header {
 	color: #fff;
 }
 .header__account-window {
+	z-index: 999999999999999999999;
 	display: none;
-	position: absolute;
-	height: 275px;
+	position: fixed;
+	height: 205px;
 	width: 188px;
     right: 10%;
-	top: 80px;
+	top: 130px;
 	overflow: hidden;
 	background-color: #FFFFFF;
 	border: solid 1px #C4C4C4;
@@ -389,6 +394,9 @@ header {
 	align-items: center;
 	padding-top: 20px;
 	gap: 40px;
+}
+.resume__image {
+	z-index: 1;
 }
 .resume__stury {
 	align-items: center;
@@ -883,6 +891,7 @@ header {
 
 .preset-store {
 	padding-top: 100px;
+	overflow: hidden;
 }
 .block__set {
 	width: 379px;

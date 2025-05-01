@@ -4,15 +4,10 @@ if (window.innerWidth > 1020) {
     let tl = gsap.timeline({ defaults: { duration: 1,  } })
     tl.from(
         '.nav__links',
-        { opacity: 0, rotateX: 0, rotateY: 0},
+        { opacity: 0, rotateX: 0, rotateY: 0, },
         { opacity: 1, x: 0, y: 0, rotateY: 215, ease: "power1.inOut"}
     )
-    tl.from(
-        '.nav__search-icon',
-        { opacity: 0, rotateX: 0, rotateY: 0},
-        { opacity: 1, x: 0, y: 0, rotateY: 215, ease: "power1.inOut"}
-    )
-    const dl = gsap.timeline({ repeat: -1, repeatDelay: 1, defaults: { ease: "power1.inOut", duration: 0.5} });
+    const dl = gsap.timeline({ repeat: -1, repeatDelay: 1, defaults: { ease: "power1.inOut", duration: 0.5, } });
     dl.fromTo(
         '.nav__discounts-content',
         { opacity: 0, x: -2000, y: 0, },
@@ -21,7 +16,7 @@ if (window.innerWidth > 1020) {
     dl.to({}, { duration: 2});
     dl.fromTo(
         '.nav__discounts-content',
-        {x: 0, y: 0, },
+        {x: 0, y: 0,  },
         { opacity: 1, x: 2000, y: 0, ease: "power1.inOut",duration: 1}
     )
 
@@ -50,8 +45,8 @@ if (window.innerWidth > 1020) {
     )
     rt.fromTo(
         '.resume__image',
-        { opacity: 0, x: 100},
-        { opacity: 1, x: 0, ease: "power1.inOut"}
+        { opacity: 0, x: 100, zIndex: -1},
+        { opacity: 1, x: 0,zIndex: -1, ease: "power1.inOut"}
     )
 
 

@@ -29,44 +29,44 @@
 </head>
 <body>
 	<div class="DARK"></div>
-	<div class="modal-help">
-			<div class="modal-help__content">
-			<div class="help__header">
-				<h2>Нужна помощь?</h2>
-			</div>
-			<div class="help__info">
-				<form>
-					<label for="help__name"></label>
-					<input type="text" name="name" placeholder="Имя " id="help__name">
-				</form>
-				<form>
-					<label for="help__telephone"></label>
-					<input type="text" name="telephone" placeholder="Контактный телефон " id="help__telephone">
-				</form>
-				<form>
-					<label for="help__email">E-mail</label>
-					<input type="email" name="email" placeholder="email" id="help__email">
-				</form>
-				<form>
-					<label for="help__comment">Сообщение</label>
-					<input type="text" name="message" id="help__comment" placeholder="">
-				</form>
-			</div>
-			<button class="help__button">отправить</button>
-			<span>Общаемся с помощью <b>Cleversite.ru</b></span>
-		</div>
-	</div>
+<!--	<div class="modal-help" id="modal-help">-->
+<!--			<div class="modal-help__content">-->
+<!--			<div class="help__header">-->
+<!--				<h2>Нужна помощь?</h2>-->
+<!--			</div>-->
+<!--			<div class="help__info">-->
+<!--				<form>-->
+<!--					<label for="help__name"></label>-->
+<!--					<input type="text" name="name" placeholder="Имя " id="help__name">-->
+<!--				</form>-->
+<!--				<form>-->
+<!--					<label for="help__telephone"></label>-->
+<!--					<input type="text" name="telephone" placeholder="Контактный телефон " id="help__telephone">-->
+<!--				</form>-->
+<!--				<form>-->
+<!--					<label for="help__email">E-mail</label>-->
+<!--					<input type="email" name="email" placeholder="email" id="help__email">-->
+<!--				</form>-->
+<!--				<form>-->
+<!--					<label for="help__comment">Сообщение</label>-->
+<!--					<input type="text" name="message" id="help__comment" placeholder="">-->
+<!--				</form>-->
+<!--			</div>-->
+<!--			<button class="help__button">отправить</button>-->
+<!--			<span>Общаемся с помощью <b>Cleversite.ru</b></span>-->
+<!--		</div>-->
+<!--	</div>-->
 	<header>
 		<div class="container">
 			<nav>
 				<div class="nav__function">
 					<div class="nav__links">
 						<a href="./reviews.html">Отзывы</a>
-						<a href="./collections.html"> Photo sessions </a>
-						<a href="./services.html"> Services </a>
+						<a href="./collections.html"> Фотосессии </a>
+						<a href="./services.html"> Услуги </a>
 					</div>
-					<a href="./index.html">
-						<img class="nav__logo" src="SVG/logo.svg" alt="image">
+					<a class="nav__logo" href="./index.html">
+						<img src="SVG/logo.svg" alt="image">
 					</a>
 					<div class="nav__search-icon">
 <!--						form action="/submit-form" method="post">-->
@@ -95,9 +95,7 @@
 									</div>
 									<div class="header__account-content">
 										<a href="./user-account.html">Данные аккаунта</a>
-										<a href="">Контактные данные</a>
-										<a href="">Мои заказы</a>
-										<a href="">Избранное</a>
+										<a href="./user-account.html">Контактные данные</a>
 										<div class="header__account-line"></div>
 										<div class="header__account-exit">
 											<img src="./SVG/header__account-exit.svg" alt="image" >
@@ -925,6 +923,7 @@
 	</footer>
 
 </body>
+<script src="./scripts/swiper.js"></script>
 <script src="./scripts/main.js"></script>
 <script src="./scripts/animation.js"></script>
 </html>

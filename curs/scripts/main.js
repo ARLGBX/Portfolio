@@ -1,56 +1,37 @@
 
-// SLIDER
-
-new Swiper('.workers__sliders', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    }
-});
-new Swiper('.recent-works-slider', {
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    }
-});
-
 // REGISTRATION DATA SAVE
 
-let DivAccount = false;
-let registation = false;
+let existingData = JSON.parse(localStorage.getItem('userData'));
+if (!existingData) {
+    // Если данных нет — создаём их впервые
+    existingData = { registered: false };
+    localStorage.setItem('userData', JSON.stringify(existingData));
+}
 
 
-if (registation === true) {
+
+
+if (existingData.registered === true) {
 
     // ACCOUNT WINDOW
 
     const account = document.querySelector('.header__account-window');
-    const clickersAccount = document.getElementsByClassName("column__trans-account");
 
-    function information() {
-        if (DivAccount === false) {
-            account.style.display = "block";
-            DivAccount = true;
-        } else if (DivAccount === true) {
-            account.style.display = "none";
-            DivAccount = false;
+
+    document.getElementById("account-window").addEventListener('click', function (event) {
+       let wndo = document.querySelector(".header__account-window");
+        wndo.style.display = "block";
+    });
+
+    document.addEventListener('click', function (event) {
+        const isClickInsideModal = account.contains(event.target);
+        const isClickOnOpenButton = event.target.closest("#account-window");
+
+        if (!isClickOnOpenButton && !isClickInsideModal) {
+
         }
-    }
-    for (let i = 0; i < clickersAccount.length; i++) {
-        if (i === 0) {
-            clickersAccount[i].onclick = information;
-        }
-    }
-} else if (registation === false) {
+    });
+} else if (existingData.registered === false) {
 
     // REGISTRATION MODAL
 
@@ -78,23 +59,31 @@ if (registation === true) {
         const email = document.getElementById("modal__email").value;
         const password = document.getElementById("modal__password").value;
 
-        const userData = {
-            name: name,
-            surname: surname,
-            email: email,
-            password: password
-        };
+        let existingData = JSON.parse(localStorage.getItem('userData')) || {};
 
-        const normalDate = JSON.stringify(userData);
-        localStorage.setItem('userData', normalDate);
+        existingData.name = name;
+        existingData.surname = surname;
+        existingData.email = email;
+        existingData.password = password;
+        existingData.registered = true;
 
-        registation = true;
+        localStorage.setItem('userData', JSON.stringify(existingData));
     }
 
     document.getElementById("modal__button").addEventListener('click', saveDate);
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,14 +91,41 @@ if (registation === true) {
 
 // POPAP HELP
 
-const popap = document.querySelector('.modal-help');
-const clickersPopap = document.getElementsByClassName("modal-help");
 
-function PopapWin () {
-    popap.style.top = '100%';
-}
-for (let i = 0; i < clickersPopap.length; i++) {
-    if (i === 0) {
-        clickersPopap[i].onclick = PopapWin;
-    }
-}
+// document.getElementById("modal-help").addEventListener('click', function (event) {
+//     let click = false
+//     if (click === false) {
+//         gsap.fromTo(
+//             ".modal-help",
+//             {y:0},
+//             {
+//                 y: -300,
+//                 duration: 1,
+//             }
+//         );
+//         click = true
+//     } else if (click === true) {
+//         gsap.fromTo(
+//             ".modal-help",
+//             {y:300},
+//             {
+//                 y: 0,
+//                 duration: 1,
+//             }
+//         );
+//         click = true
+//     }
+// });
+//
+//
+// const popap = document.querySelector('.modal-help');
+// const clickersPopap = document.getElementsByClassName("modal-help");
+//
+// function PopapWin () {
+//     popap.style.top = '10%';
+// }
+// for (let i = 0; i < clickersPopap.length; i++) {
+//     if (i === 0) {
+//         clickersPopap[i].onclick = PopapWin;
+//     }
+// }

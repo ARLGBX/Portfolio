@@ -149,6 +149,19 @@ body {
 /*HEADER*/
 
 
+.button-save {
+    display: none;
+    font-family: var(--font-family), sans-serif;
+    align-items: center;
+    gap: 10px;
+    background-color: #ff4823;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #FFFFFF;
+}
+
+
 .my-account {
     padding-top: 30px;
 }
@@ -208,7 +221,7 @@ body {
 .column__personal-information {
     display: none;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 50px;
 }
