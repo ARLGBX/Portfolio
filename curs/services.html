@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style-services.css">
+
+    <!--js-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 <header>
@@ -25,36 +30,63 @@
         <nav>
             <div class="nav__function">
                 <div class="nav__links">
-                    <a href=""> Works </a>
-                    <a href=""> About me </a>
-                    <a href=""> Photo sessions </a>
-                    <a href=""> Services </a>
+                    <a href="./reviews.html">Отзывы</a>
+                    <a href="./collections.html"> Photo sessions </a>
+                    <a href="./services.html"> Services </a>
                 </div>
-                <img src="SVG/logo.svg" alt="image">
+                <a href="./index.html">
+                    <img class="nav__logo" src="SVG/logo.svg" alt="image">
+                </a>
                 <div class="nav__search-icon">
-                    <form action="/submit-form" method="get">
-                        <div class="search-icon__input">
-                            <label for="search"><img src="./SVG/Vector.svg" alt="image"></label>
-                            <input type="text" name="search" id="search" placeholder="Search">
-                        </div>
-                    </form>
-                    <div class="search-icon__choice">
-                        <img src="./SVG/currency.svg" alt="image">
-                        <img src="./SVG/language.svg" alt="image">
-                    </div>
+                    <!--						form action="/submit-form" method="post">-->
+                    <!--						<div class="search-icon__input">-->
+                    <!--							<label for="search"><img src="./SVG/Vector.svg" alt="image"></label>-->
+                    <!--							<input type="text" name="search" id="search" placeholder="Search">-->
+                    <!--						</div>-->
+                    <!--						</form><-->
+                    <!--						<div class="search-icon__choice">-->
+                    <!--							<div class="header__language-menu">-->
+                    <!--								<div class="language__menu-language">-->
+                    <!--									<a href="" class="language__menu-link">ENG</a>-->
+                    <!--								</div>-->
+                    <!--								<div class="language__menu-language-two">-->
+                    <!--									<a href="" class="language__menu-link">RUS</a>-->
+                    <!--								</div>-->
+                    <!--							</div>-->
+                    <!--							<img class="search-icon__drop" src="./SVG/drop-down.svg" alt="image">-->
+                    <!--						</div>-->
                     <div class="search-icon__icon">
-                        <a href=""><img src="./SVG/like.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/personal-account.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/purchases.svg" alt="image"></a>
+                        <div class="header__container-account">
+                            <a><img src="./SVG/personal-account.svg" alt="image" id="account-window" class="column__trans-account"></a>
+                            <div class="header__account-window">
+                                <div class="header__account-greeting">
+                                    <span>Приветствуем, <br> NAME</span>
+                                </div>
+                                <div class="header__account-content">
+                                    <a href="./user-account.html">Данные аккаунта</a>
+                                    <a href="">Контактные данные</a>
+                                    <a href="">Мои заказы</a>
+                                    <a href="">Избранное</a>
+                                    <div class="header__account-line"></div>
+                                    <div class="header__account-exit">
+                                        <img src="./SVG/header__account-exit.svg" alt="image" >
+                                        <span>Выйти</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a><img  src="./SVG/purchases.svg" alt="image"></a>
                     </div>
                 </div>
             </div>
             <div class="nav__discounts">
-                <span>discounts for the summer season:</span>
-                <div class="discounts__partition"></div>
-                <span>discount on purchases starting from $20,000.</span>
-                <div class="discounts__partition"></div>
-                <span>a purchase gift starting from $50,000.</span>
+                <div class="nav__discounts-content">
+                    <span>Скидки на летний сезон:</span>
+                    <div class="discounts__partition"></div>
+                    <span>10% скидка на заказ от 1000 руб. по коду Summer10 </span>
+                    <div class="discounts__partition"></div>
+                    <span>5% скидка на заказ от 5000 руб. по коду Summer15</span>
+                </div>
             </div>
         </nav>
     </div>
@@ -63,7 +95,7 @@
     <section class="services">
         <div class="container">
             <div class="services__tagline">
-                <h2 class="black-text" id="description__tagline">Services</h2>
+                <h2 class="black-text" id="description__tagline">Услуги</h2>
                 <div class="description__line services__line"></div>
             </div>
             <div class="services__content">
@@ -71,27 +103,27 @@
                     <div class="services__block-task">
                         <img src="./SVG/portrait.svg" alt="image">
                         <div class="services__block-text">
-                            <h2>Family work</h2>
-                            <p>A photo shoot can be a special and memorable gift. You can order it in our photo studio.
-                                Our photographers work in a variety of genres:
-                                from portrait and lifestyle to multi-figure
-                                and abstract compositions. Each of them has a distinct personality. We also offer to make a copy of paintings by world famous masters.</p>
+                            <h2>Семейная работа</h2>
+                            <p>Семейная фотосессия на работе может стать особенным и запоминающимся подарком. Вы можете заказать его в нашей фотостудии.
+                                Наши фотографы работают в самых разных жанрах:
+                                от портрета и образа жизни до многофигурного изображения
+                                и абстрактные композиции. Каждый из них обладает ярко выраженной индивидуальностью. Мы также предлагаем изготовить копии картин всемирно известных мастеров.</p>
                         </div>
                     </div>
                     <div class="services__block-task">
                         <img src="./SVG/interior.svg" alt="image">
                         <div class="services__block-text">
-                            <h2>Interior design</h2>
-                            <p>Miro Studio - provides assistance in selecting photos for interior decoration. We present interesting solutions for design tasks
-                                using various techniques: portraits,
-                                graphics, stained glass, sculpture, photography, fresco, etc. We carry out architectural and design activities.</p>
+                            <h2>Дизайн интерьера</h2>
+                            <p>Студия Miro - оказывает помощь в подборе фотографий для оформления интерьера. Мы представляем интересные решения дизайнерских задач
+                                используя различные техники: портреты,
+                                графику, витражи, скульптуру, фотографию, фреску и т.д. Мы осуществляем архитектурную и дизайнерскую деятельность.</p>
                         </div>
                     </div>
                     <div class="services__block-task">
                         <img src="./SVG/closed-event.svg" alt="image">
                         <div class="services__block-text">
                             <h2>Photo session of exhibitions</h2>
-                            <p>We help organize a photo shoot for many different events, from simple local holidays to international events, and we will definitely record it on camera film!</p>
+                            <p>Мы помогаем организовать фотосессию для самых разных мероприятий, от простых местных праздников до международных, и обязательно запишем ее на фотопленку!</p>
                         </div>
                     </div>
                 </div>
@@ -99,20 +131,20 @@
                     <div class="services__block-task">
                         <img src="./SVG/installments.svg" alt="image">
                         <div class="services__block-text">
-                            <h2>Buy in installments</h2>
-                            <p>Now the picture you like has become more accessible.
-                                At artmolbert, you can purchase a painting in installments: <b>WITHOUT COMMISSION AND WITHOUT INCREASING THE COST.</b></p>
-                            <p>You can check the details with our managers:</p>
+                            <h2>Покупайте в рассрочку</h2>
+                            <p>Теперь понравившаяся картина стала более доступной.
+                                В магазине art molbert вы можете приобрести картину в рассрочку: <b>БЕЗ КОМИССИИ И БЕЗ УВЕЛИЧЕНИЯ СТОИМОСТИ.</b></p>
+                            <p>Вы можете уточнить детали у наших менеджеров:</p>
                             <p><b>+7 (812) 438-01-14</b></p>
                             <p><b>info@molbertgallery.ru</b></p>
-                            <p>All arrangements are individual and confidential..</p>
+                            <p>Все договоренности носят индивидуальный и конфиденциальный характер.</p>
                         </div>
                     </div>
                     <div class="services__block-task">
                         <img src="./SVG/contract.svg" alt="image">
                         <div class="services__block-text">
-                            <h2>Legal background</h2>
-                            <p>Anyone who is interested in the part concerning the part of the law can contact us at the above contacts, we have our own notary, always ready to answer any of your questions.</p>
+                            <h2>Правовая база</h2>
+                            <p>Любой, кого интересует часть, касающаяся данной части закона, может связаться с нами по указанным выше контактам, у нас есть собственный нотариус, всегда готовый ответить на любые ваши вопросы.</p>
                         </div>
                     </div>
                 </div>
@@ -120,53 +152,57 @@
         </div>
     </section>
 </main>
-<footer class="footer__services">
+<footer>
     <div class="container">
         <div class="footer__information">
-            <div class="footer__information-block">
-                <h2>TO CUSTOMERS</h2>
-                <a href="">How to place an order</a>
-                <a href="">Payment and delivery</a>
-                <a href="">Return of the product</a>
-                <a href="">Public offer</a>
-                <a href="">Conference Policy</a>
+            <div class="footer__information-wrap">
+                <!--					<div class="footer__information-block">-->
+                <!--						<h2>ДЛЯ КЛИЕНТОВ</h2>-->
+                <!--						<a href="">Как оформить заказ</a>-->
+                <!--						<a href="">Оплата и доставка</a>-->
+                <!--						<a href="">Возврат товара</a>-->
+                <!--						<a href="offer.html">Публичная оферта</a>-->
+                <!--						<a href="">Политика проведения конференций</a>-->
+                <!--					</div>-->
+                <div class="footer__information-block">
+                    <h2>КОНТАКТЫ</h2>
+                    <a href="">+7 (812) 438-01-14</a>
+                    <a href="">info@molbertgallery.ru</a>
+                    <span>Пн-Вс  09.00-20.00 </span>
+                    <span>191186, Russia, St. Petersburg</span>
+                    <span>Bolshaya Konyushennaya str., 11</span>
+                </div>
             </div>
-            <div class="footer__information-block">
-                <h2>CONTACTS</h2>
-                <a href="">+7 (812) 438-01-14</a>
-                <a href="">info@molbertgallery.ru</a>
-                <span>Пн-Вс  09.00-20.00 </span>
-                <span>191186, Russia, St. Petersburg</span>
-                <span>Bolshaya Konyushennaya str., 11</span>
+            <div class="footer__information-wrap">
+                <div class="footer__information-block">
+                    <h2>О НАС</h2>
+                    <a href="./services.html">Реквизиты</a>
+                    <a href="./reviews.html">Обзоры</a>
+                </div>
+                <!--					<div class="footer__information-block">-->
+                <!--						<h2>ПАРТНЕРЫ</h2>-->
+                <!--						<a href="">Request for cooperation</a>-->
+                <!--						<a href="">Services</a>-->
+                <!--					</div>-->
             </div>
-            <div class="footer__information-block">
-                <h2>ABOUT US</h2>
-                <a href="">Who are we</a>
-                <a href="">Requisites</a>
-                <a href="">Reviews</a>
-            </div>
-            <div class="footer__information-block">
-                <h2>PARTNERSS</h2>
-                <a href="">Request for cooperation</a>
-                <a href="">Services</a>
-            </div>
+
             <div class="footer__information-block">
                 <div class="footer__social-network">
-                    <h2>WE ARE IN SOCIAL-MEDIA:</h2>
+                    <h2>Где нас можно найти:</h2>
                     <div class="footer__social-media">
-                        <a href=""><img src="./SVG/instagram-media.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/facebook-media.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/youtube-media.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/google-media.svg" alt="image"></a>
+                        <a><img src="./SVG/instagram-media.svg" alt="image"></a>
+                        <a><img src="./SVG/facebook-media.svg" alt="image"></a>
+                        <a><img src="./SVG/youtube-media.svg" alt="image"></a>
+                        <a><img src="./SVG/google-media.svg" alt="image"></a>
                     </div>
                 </div>
                 <div class="footer__social-network">
-                    <h2>We accept:</h2>
+                    <h2>Мы принимаем:</h2>
                     <div class="footer__social-media">
-                        <a href=""><img src="./SVG/visa-card.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/master-card.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/pal-card.svg" alt="image"></a>
-                        <a href=""><img src="./SVG/union-card.svg" alt="image"></a>
+                        <a><img src="./SVG/visa-card.svg" alt="image"></a>
+                        <a><img src="./SVG/master-card.svg" alt="image"></a>
+                        <a><img src="./SVG/pal-card.svg" alt="image"></a>
+                        <a><img src="./SVG/union-card.svg" alt="image"></a>
                     </div>
                 </div>
             </div>
@@ -174,4 +210,6 @@
     </div>
 </footer>
 </body>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/animation.js"></script>
 </html>

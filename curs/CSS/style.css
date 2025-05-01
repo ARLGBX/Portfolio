@@ -21,6 +21,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+header {
+	overflow: hidden;
+}
+
 
 /*pop-up help*/
 
@@ -414,6 +418,7 @@ body {
 .welcome {
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 .welcome h2 {
 	position: absolute;
@@ -497,6 +502,7 @@ body {
 	width: 300px;
 	padding-top: 120px;
 	height: 150px;
+	margin-left: 100px;
 }
 #welcome__line {
 	width: 600px;
@@ -541,6 +547,7 @@ body {
 
 .services {
 	padding-top: 0;
+	overflow: hidden;
 }
 .services__title {
 	display: flex;
@@ -553,7 +560,7 @@ body {
 	align-items: center;
 	gap: 50px;
 }
-.services__title-text > h3 {
+.services__title-tagline {
 	display: block;
 	font-family: var(--font-family), sans-serif;
 	font-weight: 1500;
@@ -562,7 +569,7 @@ body {
 	line-height: 120%;
 	color: #000000;
 }
-.services__title-text > p {
+.services__title-paragraph {
 	font-family: var(--font-family), sans-serif;
 	max-width: 500px;
 	text-wrap: wrap;
@@ -594,25 +601,29 @@ body {
 	font-weight: 800;
 	font-size: 24px;
 	line-height: 120%;
+	color: white;
 }
 .servisec__content > p {
 	font-family: var(--font-family), sans-serif;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 140%;
-	color: #292c32;
+	color: white;
 }
-.servisec__content > a {
-	text-decoration: none;
-	font-family: var(--font-family), sans-serif;
-	color: black;
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 140%;
-}
+/*.servisec__content > a {*/
+/*	text-decoration: none;*/
+/*	font-family: var(--font-family), sans-serif;*/
+/*	color: white;*/
+/*	font-weight: 400;*/
+/*	font-size: 17px;*/
+/*	line-height: 140%;*/
+/*}*/
 
 /*Services-provided*/
 
+.Services-provided {
+	overflow: hidden;
+}
 .block__row {
 	display: flex;
 	flex-wrap: wrap;
@@ -662,6 +673,7 @@ body {
 /*About Us*/
 .about-us {
 	padding-top: 100px;
+	overflow-x: hidden;
 }
 .about-us__text {
 	display: flex;
@@ -699,6 +711,7 @@ body {
 	height: 60px;
 	background-color: white;
 	border: solid 2px;
+	cursor: pointer;
 }
 .statistics {
 	padding-top: 100px;
@@ -746,13 +759,13 @@ body {
 }
 .statistics__photo > img:nth-child(2) {
 	position: absolute;
-	left: 230px;
+	left: 170px;
 	bottom: 200px;
 	z-index: 1;
 }
 .statistics__photo > img:nth-child(3) {
 	position: absolute;
-	top: 0;
+	top: -50px;
 	z-index: 2;
 }
 
@@ -907,6 +920,7 @@ body {
 /*details*/
 
 .details {
+	overflow: hidden;
 	position: relative;
 	padding-top: 100px;
 }
@@ -941,7 +955,9 @@ body {
 }
 
 /*workers*/
-
+.workers {
+	overflow: hidden;
+}
 .workers__tagline {
 	position: relative;
 	display: flex;
@@ -970,11 +986,8 @@ body {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-	color: #000;
+	color: #ff5722;
 	font-weight: bold;
-}
-.swiper-pagination {
-	bottom: 0;
 }
 .swiper-pagination-bullet-active {
 	color: #ff5722; /* Оранжевый цвет для активной точки */
@@ -1091,7 +1104,9 @@ body {
 /*}*/
 
 /*new*/
-
+.new {
+	overflow: hidden;
+}
 .recent-works-slider {
 	display: flex;
 	justify-content: center;
@@ -1114,10 +1129,10 @@ body {
 }
 .new__card-image {
     display: flex;
-	max-width: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	width: 300px;
     border: 1px solid #c4c4c4;
 }
 .new__card-image > img {
@@ -1309,7 +1324,9 @@ body {
 }
 
 /*instagram*/
-
+.instagram {
+	overflow: hidden;
+}
 .instagram__tagline {
 	position: relative;
 }
@@ -1375,7 +1392,7 @@ body {
 	display: none;
 	position: absolute;
 	bottom: 130px;
-	left: 90px;
+	left: 135px;
 }
 .instagram__row {
 	display: flex;
@@ -1383,7 +1400,9 @@ body {
 }
 
 /*discounts*/
-
+.discounts {
+	overflow: hidden;
+}
 .discounts__content {
 	display: flex;
 	justify-content: center;
@@ -1449,7 +1468,7 @@ body {
 	border: 0;
 	border-radius: 0;
 	background-color: black;
-	margin-top: 5px;
+	margin-top: 3px;
 	padding: 0;
 }
 .discounts__transition > span {
@@ -1460,6 +1479,9 @@ body {
 }
 
 /*questions*/
+.questions {
+	overflow-x: hidden;
+}
 .questions__content {
 	display: flex;
 	flex-wrap: wrap;
@@ -1566,6 +1588,7 @@ body {
 	font-size: 28px;
 	line-height: 120%;
 	color: white;
+	text-align: center;
 }
 .start__button {
 	width: 200px;
@@ -1584,6 +1607,7 @@ footer {
 	margin-top: 100px;
 	height: 100%;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 .footer__information {
 	display: flex;
@@ -1689,6 +1713,9 @@ footer {
 @media screen and (max-width: 1020px) {
 	.nav__links > a:not(:last-child){
 		display: none;
+	}
+	.nav__logo {
+		padding: 0;
 	}
 	.nav__icon {
 		display: block;

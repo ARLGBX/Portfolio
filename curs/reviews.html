@@ -25,37 +25,63 @@
     <nav>
       <div class="nav__function">
         <div class="nav__links">
-          <a href=""> Works </a>
-          <a href=""> About me </a>
-          <a href=""> Photo sessions </a>
-          <a href=""> Services </a>
+          <a href="./reviews.html">Отзывы</a>
+          <a href="./collections.html"> Photo sessions </a>
+          <a href="./services.html"> Services </a>
         </div>
-        <img src="SVG/logo.svg" alt="image">
+        <a href="./index.html">
+          <img class="nav__logo" src="SVG/logo.svg" alt="image">
+        </a>
         <div class="nav__search-icon">
-          <form action="/submit-form" method="post">
-            <div class="search-icon__input">
-              <label for="search"
-              ><img src="./SVG/Vector.svg" alt="image"></label>
-              <input type="text" name="search" id="search" placeholder="Search">
-            </div>
-          </form>
-          <div class="search-icon__choice">
-            <img src="./SVG/currency.svg" alt="image">
-            <img src="./SVG/language.svg" alt="image">
-          </div>
+          <!--						form action="/submit-form" method="post">-->
+          <!--						<div class="search-icon__input">-->
+          <!--							<label for="search"><img src="./SVG/Vector.svg" alt="image"></label>-->
+          <!--							<input type="text" name="search" id="search" placeholder="Search">-->
+          <!--						</div>-->
+          <!--						</form><-->
+          <!--						<div class="search-icon__choice">-->
+          <!--							<div class="header__language-menu">-->
+          <!--								<div class="language__menu-language">-->
+          <!--									<a href="" class="language__menu-link">ENG</a>-->
+          <!--								</div>-->
+          <!--								<div class="language__menu-language-two">-->
+          <!--									<a href="" class="language__menu-link">RUS</a>-->
+          <!--								</div>-->
+          <!--							</div>-->
+          <!--							<img class="search-icon__drop" src="./SVG/drop-down.svg" alt="image">-->
+          <!--						</div>-->
           <div class="search-icon__icon">
-            <a href=""><img src="./SVG/like.svg" alt="image"></a>
-            <a href=""><img src="./SVG/personal-account.svg" alt="image"></a>
-            <a href=""><img src="./SVG/purchases.svg" alt="image"></a>
+            <div class="header__container-account">
+              <a><img src="./SVG/personal-account.svg" alt="image" id="account-window" class="column__trans-account"></a>
+              <div class="header__account-window">
+                <div class="header__account-greeting">
+                  <span>Приветствуем, <br> NAME</span>
+                </div>
+                <div class="header__account-content">
+                  <a href="./user-account.html">Данные аккаунта</a>
+                  <a href="">Контактные данные</a>
+                  <a href="">Мои заказы</a>
+                  <a href="">Избранное</a>
+                  <div class="header__account-line"></div>
+                  <div class="header__account-exit">
+                    <img src="./SVG/header__account-exit.svg" alt="image" >
+                    <span>Выйти</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a><img  src="./SVG/purchases.svg" alt="image"></a>
           </div>
         </div>
       </div>
       <div class="nav__discounts">
-        <span>discounts for the summer season:</span>
-        <div class="discounts__partition"></div>
-        <span>discount on purchases starting from $20,000.</span>
-        <div class="discounts__partition"></div>
-        <span>a purchase gift starting from $50,000.</span>
+        <div class="nav__discounts-content">
+          <span>Скидки на летний сезон:</span>
+          <div class="discounts__partition"></div>
+          <span>10% скидка на заказ от 1000 руб. по коду Summer10 </span>
+          <div class="discounts__partition"></div>
+          <span>5% скидка на заказ от 5000 руб. по коду Summer15</span>
+        </div>
       </div>
     </nav>
   </div>
@@ -67,16 +93,15 @@
     <div class="container">
       <div class="review__up">
         <div class="review__tagline">
-          <h2 class="black-text" id="description__tagline">Services</h2>
+          <h2 class="black-text" id="description__tagline">Услуги</h2>
           <div class="description__line review__line"></div>
         </div>
-        <button class="review__button">leave a review</button>
       </div>
       <div class="review__content">
         <div class="review__columns">
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Guest</span>
+              <span class="review__user-name">Гость</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -87,15 +112,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Marina M.</span>
+              <span class="review__user-name">Марина М.</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -106,16 +130,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>We helped you choose a painting for the living room! The magnificent colors of the painting inspire! The interior came to life
-                with the appearance of the painting.  I am very satisfied, fast delivery, the courier warned me about the delivery time earlier! I am grateful to the Artmolbert online store
-                for full purchase support!
-              </p>
+              <p>Мы помогли вам выбрать картину для гостиной! Великолепные фотографии вдохновляют! Интерьер ожил
+                с появлением картины.  Я очень довольна, быстрая доставка, курьер предупредил меня о сроках доставки раньше! Я благодарен Mirror Studio за всестороннюю поддержку при покупке!</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Alexander N.</span>
+              <span class="review__user-name">Александр Н..</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -126,15 +148,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Guest</span>
+              <span class="review__user-name">Гость</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -145,9 +166,8 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
@@ -155,7 +175,7 @@
         <div class="review__columns">
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Eugenia C..</span>
+              <span class="review__user-name">Евгения С..</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -166,15 +186,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Euphrosyne S.</span>
+              <span class="review__user-name">Евфросиния С.</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -185,15 +204,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>купленный товар был доставлен быстро
+                и я доволен покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.T</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Alexandra</span>
+              <span class="review__user-name">Александра</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -204,15 +222,14 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
           <div class="review__block-comments">
             <div class="review__information-user">
-              <span class="review__user-name">Marina M.</span>
+              <span class="review__user-name">Марина М.</span>
               <div class="revies__stars">
                 <img src="./SVG/star.svg" alt="image">
                 <img src="./SVG/star.svg" alt="image">
@@ -223,9 +240,8 @@
               <span class="review__date">30.11.2019</span>
             </div>
             <div class="review__review">
-              <p>The purchased product was delivered quickly
-                and I am satisfied with the purchase, the painting is carefully packaged and exceeds all expectations, it fits into the interior as desired! Thanks to the store for the high level of service.
-              </p>
+              <p>Купленный товар был доставлен быстро
+                и я довольна покупкой, картина тщательно упакована и превосходит все ожидания, она вписывается в интерьер так, как хотелось бы! Спасибо магазину за высокий уровень обслуживания.</p>
               <div class="review__node-clouds"></div>
             </div>
           </div>
@@ -236,53 +252,57 @@
 
 </main>
 
-<footer class="footer__services">
+<footer>
   <div class="container">
     <div class="footer__information">
-      <div class="footer__information-block">
-        <h2>TO CUSTOMERS</h2>
-        <a href="">How to place an order</a>
-        <a href="">Payment and delivery</a>
-        <a href="">Return of the product</a>
-        <a href="">Public offer</a>
-        <a href="">Conference Policy</a>
+      <div class="footer__information-wrap">
+        <!--					<div class="footer__information-block">-->
+        <!--						<h2>ДЛЯ КЛИЕНТОВ</h2>-->
+        <!--						<a href="">Как оформить заказ</a>-->
+        <!--						<a href="">Оплата и доставка</a>-->
+        <!--						<a href="">Возврат товара</a>-->
+        <!--						<a href="offer.html">Публичная оферта</a>-->
+        <!--						<a href="">Политика проведения конференций</a>-->
+        <!--					</div>-->
+        <div class="footer__information-block">
+          <h2>КОНТАКТЫ</h2>
+          <a href="">+7 (812) 438-01-14</a>
+          <a href="">info@molbertgallery.ru</a>
+          <span>Пн-Вс  09.00-20.00 </span>
+          <span>191186, Russia, St. Petersburg</span>
+          <span>Bolshaya Konyushennaya str., 11</span>
+        </div>
       </div>
-      <div class="footer__information-block">
-        <h2>CONTACTS</h2>
-        <a href="">+7 (812) 438-01-14</a>
-        <a href="">info@molbertgallery.ru</a>
-        <span>Пн-Вс  09.00-20.00 </span>
-        <span>191186, Russia, St. Petersburg</span>
-        <span>Bolshaya Konyushennaya str., 11</span>
+      <div class="footer__information-wrap">
+        <div class="footer__information-block">
+          <h2>О НАС</h2>
+          <a href="./services.html">Реквизиты</a>
+          <a href="./reviews.html">Обзоры</a>
+        </div>
+        <!--					<div class="footer__information-block">-->
+        <!--						<h2>ПАРТНЕРЫ</h2>-->
+        <!--						<a href="">Request for cooperation</a>-->
+        <!--						<a href="">Services</a>-->
+        <!--					</div>-->
       </div>
-      <div class="footer__information-block">
-        <h2>ABOUT US</h2>
-        <a href="">Who are we</a>
-        <a href="">Requisites</a>
-        <a href="">Reviews</a>
-      </div>
-      <div class="footer__information-block">
-        <h2>PARTNERSS</h2>
-        <a href="">Request for cooperation</a>
-        <a href="">Services</a>
-      </div>
+
       <div class="footer__information-block">
         <div class="footer__social-network">
-          <h2>WE ARE IN SOCIAL-MEDIA:</h2>
+          <h2>Где нас можно найти:</h2>
           <div class="footer__social-media">
-            <a href=""><img src="./SVG/instagram-media.svg" alt="image"></a>
-            <a href=""><img src="./SVG/facebook-media.svg" alt="image"></a>
-            <a href=""><img src="./SVG/youtube-media.svg" alt="image"></a>
-            <a href=""><img src="./SVG/google-media.svg" alt="image"></a>
+            <a><img src="./SVG/instagram-media.svg" alt="image"></a>
+            <a><img src="./SVG/facebook-media.svg" alt="image"></a>
+            <a><img src="./SVG/youtube-media.svg" alt="image"></a>
+            <a><img src="./SVG/google-media.svg" alt="image"></a>
           </div>
         </div>
         <div class="footer__social-network">
-          <h2>We accept:</h2>
+          <h2>Мы принимаем:</h2>
           <div class="footer__social-media">
-            <a href=""><img src="./SVG/visa-card.svg" alt="image"></a>
-            <a href=""><img src="./SVG/master-card.svg" alt="image"></a>
-            <a href=""><img src="./SVG/pal-card.svg" alt="image"></a>
-            <a href=""><img src="./SVG/union-card.svg" alt="image"></a>
+            <a><img src="./SVG/visa-card.svg" alt="image"></a>
+            <a><img src="./SVG/master-card.svg" alt="image"></a>
+            <a><img src="./SVG/pal-card.svg" alt="image"></a>
+            <a><img src="./SVG/union-card.svg" alt="image"></a>
           </div>
         </div>
       </div>

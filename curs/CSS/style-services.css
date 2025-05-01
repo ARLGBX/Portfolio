@@ -93,6 +93,7 @@ body {
 /*header*/
 .services {
     padding-top: 100px;
+    overflow: hidden;
 }
 .services__tagline {
     position: relative;

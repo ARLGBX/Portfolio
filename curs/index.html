@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/style.css">
 
-<!--SWIPER-->
+	<!--js-->
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -61,12 +61,13 @@
 			<nav>
 				<div class="nav__function">
 					<div class="nav__links">
-						<a href=""> Works </a>
-						<a href=""> About me </a>
-						<a href=""> Photo sessions </a>
-						<a href=""> Services </a>
+						<a href="./reviews.html">Отзывы</a>
+						<a href="./collections.html"> Photo sessions </a>
+						<a href="./services.html"> Services </a>
 					</div>
-					<img class="nav__logo" src="SVG/logo.svg" alt="image">
+					<a href="./index.html">
+						<img class="nav__logo" src="SVG/logo.svg" alt="image">
+					</a>
 					<div class="nav__search-icon">
 <!--						form action="/submit-form" method="post">-->
 <!--						<div class="search-icon__input">-->
@@ -105,17 +106,17 @@
 									</div>
 								</div>
 							</div>
-							<a><img  src="./SVG/purchases.svg" alt="image"></a>
+<!--							<a><img  src="./SVG/purchases.svg" alt="image"></a>-->
 						</div>
 					</div>
 				</div>
 				<div class="nav__discounts">
 					<div class="nav__discounts-content">
-						<span>discounts for the summer season:</span>
+						<span>Скидки на летний сезон:</span>
 						<div class="discounts__partition"></div>
-						<span>discount on purchases starting from $20,000.</span>
+						<span>10% скидка на заказ от 1000 руб. по коду Summer10 </span>
 						<div class="discounts__partition"></div>
-						<span>a purchase gift starting from $50,000.</span>
+						<span>5% скидка на заказ от 5000 руб. по коду Summer15</span>
 					</div>
 				</div>
 			</nav>
@@ -145,25 +146,25 @@
 		<div class="header__resume">
 			<div class="resume__stury">
 				<h1 class="resume__stury-h1">
-					Hi, I'm James Mirro & <br>
-					<span>I'M A PHOTOGRAPHER</span>
+					Привет, я Джеймс Миррор & <br>
+					<span>Я ФОТОГРАФ</span>
 				</h1>
 				<p class="resume__paragraph-one">
-					I’m James Mirro, and photography has always been my way of telling
-					stories. I started Mirror Studio with a simple goal: to capture
-					real, authentic moments. Early on, I offered free shoots to
-					locals, and word spread about my ability to make people feel at
-					ease.
+					Я Джеймс Мирро, и фотография всегда была моим способом рассказать о себе.
+					рассказы. Я основал студию Mirror Studio с простой целью: запечатлеть
+					настоящие, аутентичные моменты. Сначала я предлагал
+					местным жителям бесплатные съемки, и о моей способности заставлять людей чувствовать себя
+					непринужденно поползли слухи.
 				</p>
 				<p class="resume__paragraph-two">
-					One day, a couple came in for their wedding photos. They wanted
-					something unique, something that felt like them. I listened,
-					connected, and created something unforgettable. That shoot taught
-					me the power of trust and storytelling through my lens.
+					Однажды пара пришла сфотографироваться на свадьбу. Они хотели
+					чего-то уникального, такого, что было бы похоже на них самих. Я прислушалась,
+					установила контакт и создала нечто незабываемое. Эта съемка научила
+					меня силе доверия и рассказыванию историй через мой объектив.
 				</p>
 				<p class="resume__paragraph-three">
-					Now, Mirro Studio isn’t just a business—it’s where moments become
-					memories, and I’m honored to be the one holding the camera.
+					Теперь Mirro Studio — это не просто бизнес, это место, где мгновения становятся
+					воспоминания, и для меня большая честь быть тем, кто держит в руках фотоаппарат.
 				</p>
 			</div>
 			<img class="resume__image" src="./SVG/photo-of-a-person.svg" alt="image">
@@ -209,7 +210,7 @@
 					</div>
 				</div>
 				<div class="welcome__name">
-					<span class="black-text"><span class="white-text">STYLE <br> ON </span> Mirro Studio</span>
+					<span class="black-text"><span class="white-text">Искусство  <br> на  </span> Mirro Studio</span>
 					<div class="description__line-price" id="welcome__line"></div>
 				</div>
 			</div>
@@ -220,30 +221,30 @@
 		<section class="Services-provided">
 			<div class="container">
 				<div class="block__row">
-					<div class="block__offer">
-						<div class="block__border">
+					<div class="block__offer block__border-one">
+						<div class="block__border ">
 							<img class="block__image-one" src="./image/Tourist.jpg" alt="image">
 						</div>
-						<a href="">TOURIST SERVICES</a>
+						<a href="./collections.html">ТУРИСТИЧЕСКИЕ УСЛУГИ</a>
 					</div>
-					<div class="block__offer">
-						<div class="block__border">
+					<div class="block__offer block__border-two">
+						<div class="block__border ">
 							<img class="block__image-two" src="./image/Doc-photo.jpg" alt="image">
 						</div>
-						<a href="">DOCUMENTARIES </a>
+						<a href="./collections.html">документальные  </a>
 					</div>
 				</div>
 				<div class="block__row">
-					<div class="block__offer">
-						<div class="block__border">
+					<div class="block__offer block__border-three">
+						<div class="block__border ">
 							<img class="block__image-three" src="./image/Astra-photo.jpg" alt="image">
 						</div>
-						<a href="">ASTROPHOTOGRAPHY </a>
+						<a href="./collections.html">АСТРОФОТОГРАФИЯ </a>
 					</div>
-					<div class="block__offer">
-						<div class="block__border">
-							<img class="block__image-four" src="./image/Far-slope.jpg" alt="image"></div>
-						<a href="">LANDSCAPE </a>
+					<div class="block__offer block__border-four">
+						<div class="block__border block__image-four">
+							<img class="" src="./image/Far-slope.jpg" alt="image"></div>
+						<a href="./collections.html">пейзаж </a>
 					</div>
 				</div>
 			</div>
@@ -255,72 +256,70 @@
 			<div class="container">
 				<div class="services__title">
 					<div class="services__title-text">
-						<div class="services__pictur">
+						<div class="services__pictur" id="services__pictur-one">
 							<img src="./SVG/bends.svg" alt="">
 						</div>
-						<h3>Services</h3>
-						<P>We provide many different services in the field of photo shoots. We are ready to take on the most difficult and large orders. If you need a quick photo shoot at a wedding or funeral.</P>
+						<h3 class="services__title-tagline" id="services__title-one">Услуги</h3>
+						<P class="services__title-paragraph" id="services__paragraph-one">Мы предоставляем множество различных услуг в области фотосессий. Мы готовы взяться за самые сложные и крупные заказы. Если вам нужна быстрая фотосессия на свадьбе или похоронах.</P>
 					</div>
 				</div>
 				<div class="services__row">
-					<div class="services__block">
+					<div class="services__block services__block-one">
 						<div class="servisec__content">
 							<img src="./SVG/ring.svg" alt="">
-							<h3>Wedding Photography</h3>
-							<p>Wedding photography is often called the bread and butter of photographers — but that doesn't mean it has to be boring. Quite the opposite!</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Свадебная фотография</h3>
+							<p>Свадебную фотосъемку часто называют "хлебом насущным" для фотографов, но это не значит, что она должна быть скучной. Как раз наоборот!</p>
+
 						</div>
 					</div>
-					<div class="services__block">
+					<div class="services__block services__block-two">
 						<div class="servisec__content">
 							<img src="./SVG/surfboard.svg" alt="">
-							<h3>Sports Photography</h3>
-							<p>Sports photography is awesome. Sitting on the sidelines with a massive telephoto allows me to get right into the action — I love shooting sports where there's a lot of explosive movement.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Спортивная фотография</h3>
+							<p>Спортивная фотосъемка - это потрясающе. Сидя в сторонке с массивным телеобъективом, я могу сразу погрузиться в действие — я люблю снимать спортивные состязания, где много взрывного движения.</p>
+
 						</div>
 					</div>
-					<div class="services__block">
+					<div class="services__block services__block-three">
 						<div class="servisec__content">
 							<img src="./SVG/family.svg" alt="">
-							<h3>Portrait</h3>
-							<p>Who doesn't love portrait photography? I love being able to capture that expression, quirk, smile or whatever, that sort of defines a person.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Портрет</h3>
+							<p>Кто не любит портретную съемку? Мне нравится, что я могу запечатлеть выражение лица, причуду, улыбку или что-то еще, что характеризует человека.</p>
+
 						</div>
 					</div>
 				</div>
 				<div class="services__row">
-					<div class="services__block">
+					<div class="services__block services__block-four">
 						<div class="servisec__content">
 							<img src="./SVG/architecture.svg" alt="">
-							<h3>Architecture Photography</h3>
-							<p>The nice thing about shooting architecture (in my opinion) is that it's so easy to do. Seriously, just pick up your camera and get out there.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Архитектурная фотография</h3>
+							<p>Самое приятное в съемке архитектуры (на мой взгляд) то, что это так просто сделать. Серьезно, просто возьмите свою камеру и отправляйтесь на съемку.</p>
 						</div>
 					</div>
-					<div class="services__block">
+					<div class="services__block services__block-five">
 						<div class="servisec__content">
 							<img src="./SVG/animals.svg" alt="">
-							<h3>Animal Photography</h3>
-							<p>Whenever I'm travelling I always make sure to pack gear that allows me to capture the local wildlife. The eagle that takes flight in this picture is probably my most prized image.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Фотография животных</h3>
+							<p>Когда бы я ни путешествовал, я всегда беру с собой снаряжение, которое позволяет мне запечатлеть местную дикую природу. Орел, парящий на этом снимке, вероятно, является моим самым ценным изображением.</p>
+
 						</div>
 					</div>
-					<div class="services__block">
+					<div class="services__block services__block-six">
 						<div class="servisec__content">
 							<img src="./SVG/meal.svg" alt="">
-							<h3>Food Photography</h3>
+							<h3>Фотография еды</h3>
 							<p>I do food photography for blogs, restaurants, influencers, YouTube channels — but most importantly (if I manage to cook something that looks good) — I do food photography for myself.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+
 						</div>
 					</div>
 				</div>
 				<div class="services__row">
-					<div class="services__block">
+					<div class="services__block services__block-seven">
 						<div class="servisec__content">
 							<img src="./SVG/tree.svg" alt="">
-							<h3>Nature Photography</h3>
-							<p>Landscape photography just never gets old. Someone told me that those are the kinds of pictures you never look. Well, I don't agree.</p>
-							<a href="">Read more <img src="./SVG/vector-1.svg" alt="image"> </a>
+							<h3>Фотография природы</h3>
+							<p>Пейзажная фотография просто никогда не устареет. Кто-то сказал мне, что на такие снимки никогда не смотришь. Ну, я с этим не согласен.</p>
 						</div>
 					</div>
 				</div>
@@ -333,38 +332,38 @@
 			<div class="container">
 				<div class="about-us__text">
 					<div class="description">
-						<h2 class="black-text" id="description__tagline">ABOUT <span class="white-text">US</span></h2>
+						<h2 class="black-text" id="description__tagline">О <span class="white-text">НАС</span></h2>
 						<div class="description__line"></div>
-						<p>A platform that implements unique projects. Professional staff of employees. More than 1000 events are organized. For each work, we give out a certificate of authenticity.</p>
+						<p id="description__paragraph" >Платформа, реализующая уникальные проекты. Профессиональный состав сотрудников. Организовано более 1000 мероприятий. На каждую работу мы выдаем сертификат подлинности.</p>
 						<button class="description__button">
 							<img src="./SVG/Blacr-arrow.svg" alt="image">
 						</button>
 					</div>
 					<div class="statistics">
 						<div class="statistics__block">
-							<div class="block-organization__content">
+							<div class="block-organization__content" id="block-organization__quantity">
 								<h3>1000</h3>
-								<span>Events organized</span>
+								<span>Мероприятий организовано</span>
 							</div>
-							<div class="block-organization__content">
+							<div class="block-organization__content" id="block-organization__space">
 								<h3>200м</h3>
-								<span>Spaces for photography</span>
+								<span>Места для фотосъемки</span>
 							</div>
 						</div>
 						<div class="statistics__block">
-							<div class="block-organization__content">
-								<h3>10 <span>years</span></h3>
-								<span>Experience in the art market</span>
+							<div class="block-organization__content" id="block-organization__years">
+								<h3>10 <span>лет</span></h3>
+								<span>Опыт работы на арт-рынке</span>
 							</div>
-							<div class="block-organization__content">
-								<h3>5000</h3>
-								<span>Executed orders</span>
+							<div class="block-organization__content" id="block-organization__orders">
+								<h3>1000</h3>
+								<span>Выполненные приказы</span>
 							</div>
 						</div>
 						<div class="statistics__photo">
-							<img src="./SVG/pos-image-one.svg" alt="image">
-							<img src="./SVG/pos-image-two.svg" alt="image">
-							<img src="./SVG/pos-image-three.svg" alt="image">
+							<img id="statistics__photo-one" src="./SVG/pos-image-one.svg" alt="image">
+							<img id="statistics__photo-two" src="./SVG/pos-image-two.svg" alt="image">
+							<img id="statistics__photo-three" src="./SVG/pos-image-three.svg" alt="image">
 						</div>
 					</div>
 				</div>
@@ -436,26 +435,26 @@
 		<section class="details">
 			<div class="container">
 				<img class="details__background-image" src="SVG/big-logo-background.svg" alt="image">
-				<div class="details__block">
+				<div class="details__block" id="details__block-one">
 					<div class="details__content">
-						<h2 class="black-text">Who <br><span style="padding-left: 30px">are <span class="white-text">we</span></span></h2>
-						<p class="details__block-paragraph">Mirro Studio Gallery - is a creative space in the center of St. Petersburg. For 10 years, the gallery has conducted more than a thousand photo sessions, including exhibition projects in museums, embassies and consulates of the country, the Russian Cultural Center, as well as in the commonwealth.
-							with foreign galleries and curators.</p>
+						<h2 class="black-text" id="details__header-one">КТО <br><span style="padding-left: 30px"> <span class="white-text">МЫ</span></span></h2>
+						<p class="details__block-paragraph" id="details__paragraph-one">Галерея Mirror Studio - это креативное пространство в центре Санкт-Петербурга. За 10 лет галерея провела более тысячи фотосессий, включая выставочные проекты в музеях, посольствах и консульствах страны, Российском культурном центре, а также в странах Содружества.
+							с зарубежными галереями и кураторами.</p>
 					</div>
 				</div>
 				<div class="details__row">
-					<div class="details__block">
+					<div class="details__block" id="details__block-two">
 						<div class="details__content">
-							<h2 class="black-text details__main-text">WHAT WE <br> <span style="padding-left: 30px"><span class="white-text">DO</span></span></h2>
-							<p class="details__block-paragraph">Our goal - is to promote modern and foreign photographic skills in the CIS market, as well as to promote the professional quality of photo sessions in the field. All photographers were selected by our team, each photographer has proven themselves highly.</p>
+							<h2 class="black-text details__main-text" id="details__header-two">ЧТО МЫ <br> <span style="padding-left: 30px"><span class="white-text">ДЕЛАЕМ</span></span></h2>
+							<p class="details__block-paragraph" id="details__paragraph-two">Наша цель - продвигать современные и зарубежные фотографические навыки на рынке СНГ, а также повышать профессиональное качество фотосессий в полевых условиях. Все фотографы были отобраны нашей командой, каждый из них хорошо зарекомендовал себя.</p>
 						</div>
 					</div>
 				</div>
-				<div class="details__block">
+				<div class="details__block" id="details__block-three">
 					<div class="details__content">
-						<h2 class="black-text">HOW WE WORK <br><span style="padding-left: 30px"><span class="white-text">WORK</span></span></h2>
-						<p class="details__block-paragraph">Mirro Studio Gallery - is a creative space in the center of St. Petersburg. For 10 years, the gallery has conducted more than a thousand photo sessions, including exhibition projects in museums, embassies and consulates of the country, the Russian Cultural Center, as well as in the commonwealth.
-							with foreign galleries and curators.</p>
+						<h2 class="black-text" id="details__header-three">КАК МЫ  <br><span style="padding-left: 30px"><span class="white-text">РАБОТАЕМ</span></span></h2>
+						<p class="details__block-paragraph" id="details__paragraph-three">Галерея Mirror Studio - это креативное пространство в центре Санкт-Петербурга. За 10 лет галерея провела более тысячи фотосессий, включая выставочные проекты в музеях, посольствах и консульствах страны, Российском культурном центре, а также в странах Содружества.
+							с зарубежными галереями и кураторами.</p>
 					</div>
 				</div>
 			</div>
@@ -466,7 +465,7 @@
 		<section class="workers ">
 			<div class="container">
 				<div class="workers__tagline">
-					<h2 class="black-text"><span class="white-text">POPULAR</span> <br> WORKERS</h2>
+					<h2 class="black-text"><span class="white-text">ПОПУЯРНЫЕ</span> <br> АВТОРЫ</h2>
 					<div class="description__line-price"></div>
 				</div>
 				<div class="workers__sliders swiper">
@@ -477,8 +476,8 @@
 									<img src="./SVG/workers-face-three.svg" alt="Mikhail Solovey">
 								</div>
 								<div class="workers__content">
-									<h3>Mikhail<br>Solovey</h3>
-									<span>Sevastopol, RU</span>
+									<h3>Михаил<br>Соловей</h3>
+									<span>Москва, RU</span>
 								</div>
 							</div>
 						</div>
@@ -490,8 +489,8 @@
 									</a>
 								</div>
 								<div class="workers__content">
-									<h3>Oleg<br>Tregubov</h3>
-									<span>Minsk, BY</span>
+									<h3>Олег<br>Трегубов</h3>
+									<span>Минск, BY</span>
 								</div>
 							</div>
 						</div>
@@ -503,22 +502,14 @@
 									</a>
 								</div>
 								<div class="workers__content swiper-slide">
-									<h3>Alexander<br>Shkolny</h3>
-									<span>Astana, KZ</span>
+									<h3>Александр<br>Школьный</h3>
+									<span>Астана, KZ</span>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
-				</div>
-
-				<div class="workers__transition">
-
-					<button class="workers__button">
-						MORE
-					</button>
 				</div>
 			</div>
 		</section>
@@ -559,7 +550,7 @@
 		<section class="new">
 			<div class="container">
 				<div class="new__tagline">
-					<h2 class="black-text">RECENT  <span class="white-text">WORKS</span></h2>
+					<h2 class="black-text">НЕДАВНОЕ  <span class="white-text">РАБОТЫ</span></h2>
 					<div class="description__line new__line"></div>
 				</div>
 				<div class="recent-works-slider swiper">
@@ -570,20 +561,17 @@
 									<div class="new__card-image">
 										<div class="new__up-card">
 											<span>NEW</span>
-											<button>
-												<img src="./SVG/like.svg" alt="image">
-											</button>
 										</div>
 										<img class="new__image" src="./image/photo-sessions-1.jpg" alt="image">
 									</div>
 									<div class="new__card-content">
-										<span class="new__card-name">Mikhail Solovey</span>
-										<h3>BLACK AND WHITE</h3>
-										<span class="new__card-please">Sevastopol. RU</span>
+										<span class="new__card-name">Михаил Соловей</span>
+										<h3>ЧЕРНО-БЕЛЫЙ</h3>
+										<span class="new__card-please">Москва. RU</span>
 										<div class="new__card-line"></div>
 									</div>
 									<div class="new__under-card">
-										<span>1 000 <span>$</span></span>
+										<span>8 000 <span>руб</span></span>
 										<div class="new__under-around">
 											<img src="./SVG/purchases.svg" alt="" >
 										</div>
@@ -598,20 +586,17 @@
 									<div class="new__card-image">
 										<div class="new__up-card">
 											<span CLASS="new__up-price">-50%</span>
-											<button>
-												<img src="./SVG/like.svg" alt="image">
-											</button>
 										</div>
 										<img class="new__image" src="./image/photo-sessions-2.webp" alt="image">
 									</div>
 									<div class="new__card-content">
-										<span class="new__card-name">Oleg Tregubov</span>
-										<h3>PINK STYLE</h3>
-										<span class="new__card-please">Moscow. RU</span>
+										<span class="new__card-name">Олег Трегубов</span>
+										<h3>РОЗОВЫЙ СТИЛЬ</h3>
+										<span class="new__card-please">Минск. RU</span>
 										<div class="new__card-line"></div>
 									</div>
 									<div class="new__under-card">
-										<span>1 500 <span>$</span></span>
+										<span>14 500 <span>руб</span></span>
 										<div class="new__under-around">
 											<img src="./SVG/purchases.svg" alt="">
 										</div>
@@ -625,16 +610,13 @@
 									<div class="new__card-image">
 										<div class="new__up-card">
 											<span>BEST SELLER</span>
-											<button>
-												<img src="./SVG/like.svg" alt="image">
-											</button>
 										</div>
 										<img class="new__image" src="./image/photo-sessions-3.jpeg" alt="image">
 									</div>
 									<div class="new__card-content">
-										<span class="new__card-name">Alexander Shkonly</span>
-										<h3>STREETS OF ITALY</h3>
-										<span class="new__card-please">Florence. IT</span>
+										<span class="new__card-name">Александр Шконлый</span>
+										<h3>УЛИЦЫ ИТАЛИИ</h3>
+										<span class="new__card-please">Флоренция. IT</span>
 										<div class="new__card-line"></div>
 									</div>
 									<div class="new__under-card">
@@ -649,7 +631,6 @@
 					</div>
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -693,13 +674,13 @@
 		<section class="instagram">
 			<div class="container">
 				<div class="instagram__tagline">
-					<h2 class="black-text">INSTA<span class="white-text">GRAM</span></h2>
+					<h2 class="black-text" id="instagram__header-tagline">ИНСТА<span class="white-text">ГРАМ</span></h2>
 					<div class="description__line new__line"></div>
 				</div>
 				<div class="instagram__content">
 					<div class="instagram__text">
-						<h2>@MirroStudio</h2>
-						<span>Follow our exhibitions and news.</span>
+						<h2 id="instagram__header">@MirroStudio</h2>
+						<span id="instagram__paragraph">Следите за нашими выставками и новостями.</span>
 						<button class="instagram__button">
 							<img src="./SVG/black-arrow.svg" alt="image">
 						</button>
@@ -707,19 +688,19 @@
 				</div>
 				<div class="instagram__images">
 					<div class="instagram__row">
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-one">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-one.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-two">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-one.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-three">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-three.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
@@ -727,19 +708,19 @@
 						</div>
 					</div>
 					<div class="instagram__row">
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-four">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-seven.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-five">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-five.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-six">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-six.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
@@ -747,19 +728,19 @@
 						</div>
 					</div>
 					<div class="instagram__row">
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-seven">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-eight.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-eight">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-nine.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
 							</a>
 						</div>
-						<div class="instagram__block-image">
+						<div class="instagram__block-image" id="instagram__block-nine">
 							<a class="instagram__link" href="">
 								<img src="./SVG/instagram-one.svg" alt="image">
 								<img src="./SVG/instagram-logo.svg" alt="image">
@@ -773,11 +754,11 @@
 		<section class="discounts">
 			<div class="container">
 				<div class="discounts__content">
-					<div class="discounts__line"></div>
+					<div class="discounts__line" id="discounts__line-one"></div>
 					<div class="discounts__info">
 						<div class="discounts__tagline">
 							<h2>10 %</h2>
-							<span>Get it for your first purchase</span>
+							<span>Получите его за свою первую покупку</span>
 						</div>
 						<div class="discounts__transition">
 							<div class="discounts__form-button">
@@ -785,12 +766,12 @@
 									<label for="email-1"></label>
 									<input class="discounts__form" type="email" name="email" placeholder="E-mail" id="email-1" required>
 								</form>
-								<button class="discounts__button">subscribe</button>
+								<button class="discounts__button">подписаться</button>
 							</div>
-							<span>By subscribing, you agree to the Privacy & Usage Policy</span>
+							<span id="discounts__information">Оформляя подписку, вы соглашаетесь с политикой конфиденциальности и использования</span>
 						</div>
 					</div>
-					<div class="discounts__line"></div>
+					<div class="discounts__line" id="discounts__line-two"></div>
 				</div>
 			</div>
 		</section>
@@ -801,12 +782,12 @@
 					<div class="questions__inspiration">
 						<img src="./SVG/eye.svg" alt="image">
 						<div class="questions__line"></div>
-						<span>We will help you choose a photo shoot for a good shoot.</span>
+						<span>Мы поможем вам выбрать фотосессию для хорошей съемки.</span>
 					</div>
 					<div class="questions__questionnaire">
 						<div class="questions__text">
-							<h2 class="black-text questions__tagline"><span class="white-text">Any</span> <br> questions?</h2>
-							<p>Leave a request, our best employee, <br> He will contact and advise you.</p>
+							<h2 class="black-text questions__tagline"><span class="white-text">Еще</span> <br> вопросы?</h2>
+							<p id="questions__paragraph">Оставьте заявку нашему лучшему сотруднику, <br> он свяжется с вами и проконсультирует.</p>
 						</div>
 						<div class="questions__form-block">
 							<form action="/submit-form" method="get">
@@ -823,7 +804,7 @@
 							</form>
 						</div>
 						<div class="questions__button-block">
-							<button class="questions__button">to send</button>
+							<button class="questions__button">отправить</button>
 						</div>
 					</div>
 				</div>
@@ -837,30 +818,30 @@
 			<div class="container">
 				<div class="services__title">
 					<div class="services__title-text">
-						<div class="services__pictur">
+						<div class="services__pictur" id="services__pictur-two">
 							<img src="./SVG/bends.svg" alt="">
 						</div>
-						<h3>Preset Store</h3>
-						<P>We provide different service packages for different situations and orders. From active sports, to wedding and landscape photo shoots. We have already had a lot of experience in this field, and we are even ready for new formats.</P>
+						<h3 class="services__title-tagline" id="services__title-two">Пакеты услуг</h3>
+						<P class="services__title-paragraph" id="services__paragraph-two">Мы предоставляем различные пакеты услуг для различных ситуаций и заказов. От активных видов спорта до свадебных и ландшафтных фотосессий. У нас уже большой опыт в этой области, и мы всегда готовы к новым форматам.</P>
 					</div>
 				</div>
 			</div>
 			<div class="block__row">
-				<div class="block__set">
+				<div class="block__set" id="block__set-one">
 					<img src="./SVG/VOI-1.svg" alt="image">
 					<div class="block__content">
 						<h3>Mirro Preset Pack Vol. 01</h3>
-						<p>The first volume is my go-to presets when shooting action sports. Just the right amount of contrast and highlights to make your photo (literally) pop!</p>
+						<p>Первый том посвящен моим основным настройкам при съемке спортивных экшенов. Только нужное количество контрастности и бликов, чтобы сделать вашу фотографию (в буквальном смысле) эффектной!</p>
 					</div>
 				</div>
-				<div class="block__set">
+				<div class="block__set" id="block__set-two">
 					<img src="./SVG/VOI-2.svg" alt="image">
 					<div class="block__content">
 						<h3>Mirro Preset Pack Vol. 02</h3>
-						<p>Vol. 02 is dedicated solely to landscape photography. Pay attention to your exposure while out there and these presets will make your photos look great.</p>
+						<p>Том 02 посвящен исключительно пейзажной фотографии. Следите за экспозицией во время съемки, и эти пресеты придадут вашим фотографиям великолепный вид.</p>
 					</div>
 				</div>
-				<div class="block__set">
+				<div class="block__set" id="block__set-three">
 					<img src="./SVG/VOI-3.svg" alt="image">
 					<div class="block__content">
 						<h3>Mirro Preset Pack Vol. 03</h3>
@@ -878,8 +859,8 @@
 			<div class="container">
 				<div class="start">
 					<div class="start__content">
-						<span>START WORKING</span>
-						<button class="start__button">CONTACT</button>
+						<span>НАЧИНАЙТЕ РАБОТАТЬ</span>
+						<button class="start__button">контакт</button>
 					</div>
 				</div>
 			</div>
@@ -889,16 +870,16 @@
 		<div class="container">
 			<div class="footer__information">
 				<div class="footer__information-wrap">
-					<div class="footer__information-block">
-						<h2>TO CUSTOMERS</h2>
-						<a href="">How to place an order</a>
-						<a href="">Payment and delivery</a>
-						<a href="">Return of the product</a>
-						<a href="offer.html">Public offer</a>
-						<a href="">Conference Policy</a>
-					</div>
-					<div class="footer__information-block">
-						<h2>CONTACTS</h2>
+<!--					<div class="footer__information-block">-->
+<!--						<h2>ДЛЯ КЛИЕНТОВ</h2>-->
+<!--						<a href="">Как оформить заказ</a>-->
+<!--						<a href="">Оплата и доставка</a>-->
+<!--						<a href="">Возврат товара</a>-->
+<!--						<a href="offer.html">Публичная оферта</a>-->
+<!--						<a href="">Политика проведения конференций</a>-->
+<!--					</div>-->
+					<div class="footer__information-block" id="footer__block-one">
+						<h2>КОНТАКТЫ</h2>
 						<a href="">+7 (812) 438-01-14</a>
 						<a href="">info@molbertgallery.ru</a>
 						<span>Пн-Вс  09.00-20.00 </span>
@@ -906,37 +887,36 @@
 						<span>Bolshaya Konyushennaya str., 11</span>
 					</div>
 				</div>
-				<div class="footer__information-wrap">
+				<div class="footer__information-wrap" id="footer__block-two">
 					<div class="footer__information-block">
-						<h2>ABOUT US</h2>
-						<a href="">Who are we</a>
-						<a href="">Requisites</a>
-						<a href="">Reviews</a>
+						<h2>О НАС</h2>
+						<a href="./services.html">Реквизиты</a>
+						<a href="./reviews.html">Обзоры</a>
 					</div>
-					<div class="footer__information-block">
-						<h2>PARTNERSS</h2>
-						<a href="">Request for cooperation</a>
-						<a href="">Services</a>
-					</div>
+<!--					<div class="footer__information-block">-->
+<!--						<h2>ПАРТНЕРЫ</h2>-->
+<!--						<a href="">Request for cooperation</a>-->
+<!--						<a href="">Services</a>-->
+<!--					</div>-->
 				</div>
 
-				<div class="footer__information-block">
+				<div class="footer__information-block" id="footer__block-three">
 					<div class="footer__social-network">
-						<h2>WE ARE IN SOCIAL-MEDIA:</h2>
+						<h2>Где нас можно найти:</h2>
 						<div class="footer__social-media">
-							<a href=""><img src="./SVG/instagram-media.svg" alt="image"></a>
-							<a href=""><img src="./SVG/facebook-media.svg" alt="image"></a>
-							<a href=""><img src="./SVG/youtube-media.svg" alt="image"></a>
-							<a href=""><img src="./SVG/google-media.svg" alt="image"></a>
+							<a><img src="./SVG/instagram-media.svg" alt="image"></a>
+							<a><img src="./SVG/facebook-media.svg" alt="image"></a>
+							<a><img src="./SVG/youtube-media.svg" alt="image"></a>
+							<a><img src="./SVG/google-media.svg" alt="image"></a>
 						</div>
 					</div>
 					<div class="footer__social-network">
-						<h2>We accept:</h2>
+						<h2>Мы принимаем:</h2>
 						<div class="footer__social-media">
-							<a href=""><img src="./SVG/visa-card.svg" alt="image"></a>
-							<a href=""><img src="./SVG/master-card.svg" alt="image"></a>
-							<a href=""><img src="./SVG/pal-card.svg" alt="image"></a>
-							<a href=""><img src="./SVG/union-card.svg" alt="image"></a>
+							<a><img src="./SVG/visa-card.svg" alt="image"></a>
+							<a><img src="./SVG/master-card.svg" alt="image"></a>
+							<a><img src="./SVG/pal-card.svg" alt="image"></a>
+							<a><img src="./SVG/union-card.svg" alt="image"></a>
 						</div>
 					</div>
 				</div>
