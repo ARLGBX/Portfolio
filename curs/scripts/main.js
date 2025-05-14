@@ -62,6 +62,13 @@ if (existingData.registered === true) {
     }
 
     document.getElementById("modal__button").addEventListener('click', saveDate);
+
+    document.getElementById("modal__button").addEventListener('click', function (event) {
+        location.reload(true);
+
+    });
+
+
 }
 
 
