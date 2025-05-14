@@ -371,11 +371,11 @@ header {
 .header__account-window {
 	z-index: 999999999999999999999;
 	display: none;
-	position: fixed;
+	position: absolute;
 	height: 205px;
 	width: 188px;
     right: 10%;
-	top: 130px;
+	top: 90px;
 	overflow: hidden;
 	background-color: #FFFFFF;
 	border: solid 1px #C4C4C4;
