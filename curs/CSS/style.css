@@ -316,6 +316,7 @@ header {
 	display: none;
 }
 .nav__logo {
+	text-decoration: none;
 	margin-right: 350px;
 	font-size: 58px;
 	font-weight: bold;
