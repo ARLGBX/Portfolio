@@ -470,7 +470,7 @@ header {
 	font-weight: 1200;
 	font-size: 20px;
 	line-height: 30px;
-	color: #5d17eb;
+	color: black;
 }
 
 /* HEADER */
@@ -636,7 +636,7 @@ header {
 	font-size: 16px;
 	line-height: 140%;
 	text-align: center;
-	color: #5d17eb;
+	color: black;
 }
 .services__row {
 	display: flex;
@@ -763,7 +763,7 @@ header {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 145%;
-	color: #5d17eb;
+	color: black;
 }
 .description__button {
 	width: 100px;
@@ -1599,7 +1599,7 @@ header {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 100%;
-	color: #5d17eb;
+	color: #1d0749;
 }
 .questions__tagline {
 	margin-bottom: 0;
@@ -1664,7 +1664,7 @@ header {
 /*FOOTER*/
 
 footer {
-	background-color: #5d17eb;
+	background-color: #220855;
 	margin-top: 100px;
 	height: 100%;
 	padding-bottom: 50px;
@@ -1776,7 +1776,7 @@ footer {
 		display: none;
 	}
 	.nav__vector {
-		display: block;
+		display: none;
 	}
 	.nav__icon {
 		display: block;
