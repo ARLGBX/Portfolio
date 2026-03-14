@@ -653,6 +653,7 @@ header {
 	margin: 10px;
 }
 .servisec__content {
+	text-align: center;
 	padding: 10px;
 }
 .servisec__content > h3 {
@@ -1805,7 +1806,7 @@ footer {
 	.nav__purchases {
 		display: none;
 	}
-	.workers__row {;
+	.workers__row {
 		gap: 80px;
 	}
 	.Price {
