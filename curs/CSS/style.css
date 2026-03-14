@@ -446,6 +446,7 @@ header {
 	gap: 40px;
 }
 .resume__image {
+	max-width:  550px;
 	z-index: 1;
 }
 .resume__stury {
@@ -1674,8 +1675,8 @@ footer {
 }
 .footer__information {
 	display: flex;
-	justify-content: center;
-	padding-top: 20px;
+	justify-content: left;
+	padding: 20px;
 	gap: 30px;
 }
 .footer__information-block {

@@ -56,7 +56,7 @@
 <!--			<span>Общаемся с помощью <b>Cleversite.ru</b></span>-->
 <!--		</div>-->
 <!--	</div>-->
-	<header>
+	<header id="header">
 		<div class="container">
 			<nav>
 				<div class="nav__function">
@@ -68,8 +68,8 @@
 					</div>
 					<div class="nav__links">
 						<a id="nav__links-one" href="./reviews.html">Отзывы</a>
-						<a id="nav__links-two" href="./collections.html"> Фотосессии </a>
-						<a id="nav__links-three" href="./services.html"> Услуги </a>
+						<a id="nav__links-two" href="#services"> Услуги </a>
+						<a id="nav__links-three" href="#about-us"> О нас </a>
 						<img class="nav__vector" id="nav__vector" src="./SVG/menu-vectora.svg">
 					</div>
 					<a href="./index.html" style="text-decoration: none;">
@@ -160,14 +160,14 @@
 					Сегодня Zentryx — это не просто студия разработки. Это место, где идеи обретают форму, а код превращается в воспоминания и впечатления пользователей. Для нас большая честь быть теми, кто создает для этого цифровую основу.
 				</p>
 			</div>
-			<img class="resume__image" src="./SVG/photo-of-a-person.svg" alt="image">
+			<img class="resume__image" src="./image/5294299142769285540.jpg" alt="image">
 		</div>
 	</header>
 	<main>
 
 		<!-- SERVIS SECTION -->
 
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<div class="services__title">
 					<div class="services__title-text">
@@ -242,7 +242,7 @@
 
 		<!--About Us-->
 
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			<div class="container">
 				<div class="about-us__text">
 					<div class="description">
@@ -342,7 +342,7 @@
 <!--			</div>-->
 <!--		</section>-->
 
-		<section class="new">
+		<section class="new" id="new">
 			<div class="container">
 				<div class="new__tagline">
 					<h2 class="black-text">НЕДАВНИЕ  <span class="white-text">РАБОТЫ</span></h2>
@@ -449,8 +449,11 @@
 				</div>
 				<div class="footer__information-wrap" id="footer__block-two">
 					<div class="footer__information-block">
-						<h2>О НАС</h2>
-						<a href="./services.html">Реквизиты</a>
+						<h2>НАВИГАЦИЯ</h2>
+						<a href="#header">Главная</a>
+						<a href="#services">Услуги</a>
+						<a href="#about-us">О нас</a>
+						<a href="#new">Недавние игры</a>
 						<a href="./reviews.html">Отзывы</a>
 					</div>
 				</div>
