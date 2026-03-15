@@ -317,7 +317,7 @@ header {
 }
 .nav__logo {
 	text-decoration: none;
-	margin-right: 350px;
+	margin-right: 250px;
 	font-size: 58px;
 	font-weight: bold;
 	color: #5d17eb;
@@ -653,6 +653,7 @@ header {
 	background-color: #5d17eb;
 	border-radius: 30px;
 	margin: 10px;
+	padding: 15px;
 }
 .servisec__content {
 	text-align: center;
@@ -1190,8 +1191,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
 }
-.new__card-image {
+.new__card-image{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1199,9 +1201,51 @@ header {
 	width: 300px;
     border: 1px solid #c4c4c4;
 }
+.new__card-logo-Hex {
+	width: 200px;
+	height: 288px;
+	background-color: greenyellow;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.new__card-logo-Hex > span {
+	font-size: 150px;
+	cursor: default;
+	color: #7f61dd;
+}
+.new__card-logo-S {
+	width: 200px;
+	height: 288px;
+	background-color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.new__card-logo-S > span {
+	font-size: 45px;
+	cursor: default;
+	font-family: var(--font-family), sans-serif;
+}
 .new__card-image > img {
     width: 222px;
     height: 288px;
+}
+.new__card-fut > img {
+	width: 300px;
+	height: 200px;
+}
+.new__card-SKY > div {
+	background-color: white;
+}
+.new__card-SKY span {
+	color: #eb4c56;
+	font-weight: bolder;
 }
 .new__up-price {
 	display: flex;
@@ -1236,10 +1280,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     gap: 10px;
 }
 .new__card-content > span, h3 {
     margin: 0;
+}
+.new__card-content > a {
+	text-decoration: none;
+	font-family: var(--font-family), sans-serif;
+	color: #5d17eb;
+	font-size: 24px;
 }
 .new__card-content > span {
     font-family: var(--font-family), sans-serif;
@@ -1257,6 +1308,7 @@ header {
     color: #5d17eb;
 }
 .new__card-line {
+	margin: 30px 0;
     border: 1px solid rgba(255, 72, 35, 0.44);
     width: 160px;
     height: 0;
@@ -1269,7 +1321,7 @@ header {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #5d17eb;
-    padding-right: 50px;
+	margin-top: 20px;
 }
 .new__under-card > span > span {
     font-family: var(--font-family), sans-serif;
@@ -1299,6 +1351,8 @@ header {
 }
 .new__image {
     padding-bottom: 30px;
+	padding-top: 30px;
+
 }
 
 /*gift*/
