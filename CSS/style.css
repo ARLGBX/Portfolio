@@ -1199,6 +1199,8 @@ header {
     flex-direction: column;
     justify-content: center;
 	align-items: center;
+	border: solid 1px #5d17eb;
+	padding: 0 30px 0 30px;
 }
 .new__card-image{
     display: flex;
